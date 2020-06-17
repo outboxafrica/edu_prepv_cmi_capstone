@@ -8,7 +8,7 @@ body{
   }
   #navbar {
     overflow: hidden;
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(209, 24, 24);
   }
   #navbar a {
     float: left;
@@ -53,7 +53,7 @@ body{
     font-weight: bolder;
   }
   #welcome-section{
-    background-image: url(../HTML/Conputer_lab_2.jpg);
+    background-image: url(../images/best-actors.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -65,7 +65,7 @@ body{
   }
   #welcome-text{
     width:550px;
-    background-color: yellow;
+    background-color: lightpink;
     text-transform: initial;
     padding: 30px;
     position: relative;
@@ -100,7 +100,7 @@ body{
       width:91%;
       color: floralwhite;
       position: static;
-      background-image: url(../images/img11-media.jpg);
+      background-image: url(../images/best-actors.jpg);
       background-size: cover;
       opacity: 1;
     }
@@ -122,7 +122,7 @@ body{
     color: #f1ececf3;
   }
   .magi-movie-image{
-    width: 50%;
+    width: 100%;
     float: right;
     margin-left: 20px;
   }
@@ -159,10 +159,10 @@ body{
     }
   }
   h3 {
-      text-decoration-color: violet;
+      text-decoration-color: none;
       bottom: 30;
       text-align: right;
-      color: rgb(77, 255, 71);
+      color: rgb(3, 10, 14);
       font-family: Georgia, 'Times New Roman', Times, serif;
       size: 5rem;
   }
