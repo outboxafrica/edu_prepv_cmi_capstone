@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Magi-Movie Library</title>
+  <link rel="stylesheet" href="../CSS/homepage.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+              <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+              <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+            </svg>
+          </a>
+    
+    <ul class="navbar-nav">
+          <div id="content">
+           <li> <a href="../HTML/homepage.html">HOME</a></li>
+           <li> <a href="../HTML/signuppage.html">SIGN IN INTO THE MAGI-MOVIE</a></li>
+           <li><a href="../HTML/loginpage.html">ALREADY HAVE AN ACCOUNT, LOG IN</a></li>
+           <li> <a href="../HTML/checkoutpage.html">CHECK OUT</a></li>
+          </div>
+        </div>
+</ul>
+    </nav>
+
+  <div id="welcome-section">
+    <div id="welcome-text">
+      <h1><STRONG>THE MAGI-MOVIE LIBRARY</STRONG></h1>
+      <h2>Wecome to the platform of the latest movies.</h2>
+      <p>Do you love movies? You are on the right track</p>
+      <p>The magic-movie library provides you with the latest movies, both fun and inspirational.
+         Sign up todayand enjoy your favorate movies online <a href="../HTML/signuppage.html">SIGN IN INTO THE MAGI-MOVIE</a></p>
+    </div>
+    
+
+  
+  <hr>
+  <div class="magic-movie" id="magic-movie">
+    <h3><strong>TOGETHER WE CAN INSPIRE AND MOTIVATE</strong></h3>
+    <div class="magi-movie-image">
+      <img src="../HTML/10.webp">
+    </div>
+    
+      <form>
+        <input id="contact magic-movie" type="email" placeholder="Your Email..">
+        <button>Submit your inquiries</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+
+  </footer>
+  <div class="copyright">
+    <p>&copy; ALL RIGHS RESERVED | MAGICIANS 2020</p>
+  </div>
+
+  <script>
+    function openSlideMenu() {
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+    function closeSlideMenu() {
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+</body>
+
+</html>
