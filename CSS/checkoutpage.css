@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/* Applying CSS to all elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/* CSS for body */
+
+body {
+    background-image: url(../images/background-image.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* positioning the checkout block */
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 350px;
+}
+
+
+/* Flex will push the bottom half of form (mycheckout) 
+to the right, next to product info */
+
+.wrapper .checkout-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+/* wrapper css for the whole checkout tab */
+
+.wrapper .checkout-wrapper .checkout-product-info {
+    width: 45%;
+    background: antiquewhite;
+    border-radius: 20px 20px;
+    position: relative;
+}
+
+
+/* adjustment for the image */
+
+.wrapper .checkout-wrapper .checkout-product-info img {
+    width: 180px;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+
+/* headertext of the checkout screen  */
+
+.wrapper .checkout-wrapper .checkout-product-info .content {
+    text-align: center;
+    margin-top: 25px;
+    color: blue;
+    text-transform: uppercase;
+}
+
+
+/* header */
+
+.wrapper .checkout-wrapper .checkout-product-info .content h3 {
+    font-size: 19px;
+    line-height: 19px;
+    color: blue;
+    letter-spacing: 3px;
+}
+
+.wrapper .checkout-wrapper .checkout-product-info .content p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.wrapper .checkout-wrapper .chekcout-form {
+    width: 55%;
+    background: #fff;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    padding: 50px 30px;
+}
+
+.wrapper .checkout-wrapper .chekcout-form p {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.wrapper .checkout-wrapper.checkout-form {
+    width: 0%;
+}
