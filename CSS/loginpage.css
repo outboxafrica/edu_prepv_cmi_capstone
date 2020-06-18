@@ -1,0 +1,33 @@
+.address{
+    width: 300px;
+    padding:10px; 
+    border-radius: 5px;
+}
+.character{
+    width: 300px; 
+    padding:10px;
+    border-radius: 5px;
+}
+body{
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
+    background-color: #dedede;
+}
+#heading{
+    text-align: center; 
+    padding-top: 50px;
+    padding:50px;
+}
+#btn{
+    background-color: rgb(52, 52, 241);
+    padding:8px;
+    width: 325px;
+    font-weight: bold;
+    color: wheat; 
+    border-radius: 5px;
+}
+.ref{
+    margin-left: 290px;  
+    text-decoration:none;
+}
