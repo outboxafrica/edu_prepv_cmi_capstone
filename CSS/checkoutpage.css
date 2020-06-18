@@ -16,6 +16,7 @@
 
 body {
     background-image: url(../images/background-image.jpg);
+    background-color: darkgreen;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -47,9 +48,10 @@ to the right, next to product info */
 /* wrapper css for the whole checkout tab */
 
 .wrapper .checkout-wrapper .checkout-product-info {
-    width: 45%;
+    width: 65%;
     background: antiquewhite;
-    border-radius: 20px 20px;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
     position: relative;
 }
 
@@ -76,7 +78,7 @@ to the right, next to product info */
 /* header */
 
 .wrapper .checkout-wrapper .checkout-product-info .content h3 {
-    font-size: 19px;
+    font-size: 18px;
     line-height: 19px;
     color: blue;
     letter-spacing: 3px;
@@ -87,11 +89,14 @@ to the right, next to product info */
     margin-top: 10px;
 }
 
+
+/* This is modifying the right hand side of the checkout page */
+
 .wrapper .checkout-wrapper .chekcout-form {
     width: 55%;
     background: #fff;
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
     padding: 50px 30px;
 }
 
@@ -100,6 +105,12 @@ to the right, next to product info */
     margin-top: 10px;
 }
 
-.wrapper .checkout-wrapper.checkout-form {
-    width: 0%;
+.wrapper .checkout-wrapper .checkout-form {
+    width: 55%;
+    background: #fff;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    padding: 50px 30px;
 }
+
+.wrapper .checkout-wrapper .checkout-form {}
