@@ -1,0 +1,203 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:"Arial", Serif;
+    background-color:#f4f4f4ec;
+    
+  }
+  #navbar {
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+  }
+  #navbar a {
+    float: left;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  #navbar ul{
+    margin:8px 0 0 0;
+    list-style:none;
+  }
+ 
+  #navbar a:hover, #dropdown:hover #dropbtn {
+    background-color: deeppink;
+  }
+  
+  
+  #main{
+    transition:margin-left 0.5s;
+    padding:20px;
+    overflow:hidden;
+    width:100%;
+  }
+  @media(max-width:568px){
+    .navbar-nav{display:none}
+  }
+  
+  h1 {
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  h2 { 
+    color: deeppink;
+  }
+  i {
+    float: right;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  #welcome-section{
+    background-image: url(../HTML/Conputer_lab_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding-top: 0px;
+    margin-top: 0px;
+    display: block;
+    height: 100vh;
+  }
+  #welcome-text{
+    width:550px;
+    background-color: yellow;
+    text-transform: initial;
+    padding: 30px;
+    position: relative;
+    left: 90px;
+    top: 90px;
+    opacity: 0.8;
+  }
+  .welcome-btn{
+    width:550px;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    left: 90px;
+    top: 90px;
+  }
+  .welcome-btn button{
+    width: 60%;
+    border: 1px solid rgba(102, 102, 102, 0.918);
+    background-color: deeppink;
+    padding: 12px;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+  .welcome-btn a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  @media(max-width:760px){
+    #welcome-text{
+      width:91%;
+      color: floralwhite;
+      position: static;
+      background-image: url(../images/img11-media.jpg);
+      background-size: cover;
+      opacity: 1;
+    }
+    .welcome-btn{
+      display: none;
+    }
+    #welcome-section{
+      background-image:none;
+      width: 100%;
+      height: 20%;
+    }
+  }
+  
+  .caption{
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: auto;
+    height: 30px;
+    color: #f1ececf3;
+  }
+  .magi-movie-image{
+    width: 50%;
+    float: right;
+    margin-left: 20px;
+  }
+  .magi-movie-image img{
+    width: 100%;
+    height: 250px;
+  }
+  .magi-movie-text{
+    text-transform: initial;
+    text-align: justify;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  @media(max-width:760px){
+    .magi-movie-image{
+      width:80%;
+      clear: both;
+      height: auto;
+    }
+    .magic-movi-image img{
+      display: none;
+    }
+    .magi-movie-text{
+      padding-top: 10px;
+      clear: both;
+      margin: 0px auto;
+      width: 80%;
+      height: auto;
+    }
+    h2, h1, h3{
+      text-align: center;
+      font-size: large;
+    }
+  }
+  h3 {
+      text-decoration-color: violet;
+      bottom: 30;
+      text-align: right;
+      color: rgb(77, 255, 71);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      size: 5rem;
+  }
+  .contact-git{
+    width: 100%;
+    float: left;
+    margin-right: 20px;
+    height: 300px;
+    opacity: 0.9;
+  }
+  
+  #form{
+    text-transform: initial;
+    text-align: justify;
+    height: 100px;
+    text-align: center;
+    padding: 70px;
+    bottom: 0;
+  }
+  
+  footer {
+    clear: both;	
+    width:100%;
+    margin-bottom: 30px;
+    margin-top: -50px;
+  }
+  footer .menu a, .copyright {
+    color:grey;
+    font-size:10px;
+  }
+  .copyright {
+    width:95%;
+    padding: 10px;
+    border: 1px solid #eee;
+    text-align: center;
+  }
+  
+  
