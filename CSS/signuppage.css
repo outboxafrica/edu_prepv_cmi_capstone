@@ -2,11 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    /* background-image: url();
-    background-size: cover;
-    background-position: center; */
+    background-image: url(../images/bkgd.jpg);
 }
-/*navbar css*/
+/*add navbar*/
 #navbar {
     overflow: hidden;
     background-color: rgb(209, 160, 24);
