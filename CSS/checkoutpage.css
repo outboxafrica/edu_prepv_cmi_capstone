@@ -79,8 +79,7 @@ to the right, next to product info */
 
 .wrapper .checkout-wrapper .checkout-product-info .content h3 {
     font-size: 18px;
-    line-height: 19px;
-    color: blue;
+    line-height: 18px;
     letter-spacing: 3px;
 }
 
@@ -90,20 +89,7 @@ to the right, next to product info */
 }
 
 
-/* This is modifying the right hand side of the checkout page */
-
-.wrapper .checkout-wrapper .chekcout-form {
-    width: 55%;
-    background: #fff;
-    border-top-left-radius: 20%;
-    border-bottom-left-radius: 20%;
-    padding: 50px 30px;
-}
-
-.wrapper .checkout-wrapper .chekcout-form p {
-    font-size: 10px;
-    margin-top: 10px;
-}
+/* This css is modifying the right hand side of the checkout page */
 
 .wrapper .checkout-wrapper .checkout-form {
     width: 55%;
@@ -113,4 +99,30 @@ to the right, next to product info */
     padding: 50px 30px;
 }
 
-.wrapper .checkout-wrapper .checkout-form {}
+.wrapper .checkout-wrapper .checkout-form p {
+    margin-bottom: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.wrapper .checkout-wrapper .checkout-form .section {
+    margin-bottom: 15px;
+}
+
+.wrapper .checkout-wrapper .checkout-form .section input[type="text"] {
+    width: 100%;
+    padding: 5px;
+}
+
+.wrapper .checkout-wrapper .checkout-form .section input[type="text"]:focus {
+    border-color: lightblue;
+}
+
+.wrapper .checkout-wrapper .checkout-form .section.last_section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .checkout-wrapper .checkout-form .section.last_section {
+    width: 48%;
+}
