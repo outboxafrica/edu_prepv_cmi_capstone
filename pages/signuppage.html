@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Page</title>
     <link rel="stylesheet" href="../CSS/signuppage.css">
+    <script defer src="../JS/signupscript.js"></script>
 </head>
 <!-- created a html sign up page and linked it to signuppage.css  -->
 
@@ -37,18 +38,18 @@
         <h1>Sign Up</h1>
         <!-- sign up form inputs -->
         <form>
-            <input type="email" class="input-box" placeholder="Your email">
+            <input type="email" class="input-box" placeholder="Your email" required>
             <br>
-            <input type="password" class="input-box" placeholder="Your password">
-            <p><span><input type="checkbox" class="check-box"></span> I agree to the Terms of Service</p>
-            <button type="button" class="sign-up-btn" alt="SignUp">Sign Up</button>
-            <hr>
-            <p class="or">OR</p>
-            <!-- <button type="button" class="login-with-btn" alt="Login with Google">Login with Google</button> -->
-            <p>Do you have an account?
-                <a href="#">Login</a></p>
+            <input type="password" class="input-box" placeholder="Your password" required>
+            <p><span><input type="checkbox" class="check-box" required></span> I agree to the Terms of Service</p>
+        <button type="button" class="sign-up-btn" alt="SignUp">Sign Up</button>
+        <hr>
+        <p class="or">OR</p>
+        <!-- <button type="button" class="login-with-btn" alt="Login with Google">Login with Google</button> -->
+        <p>Do you have an account?
+            <a href="#">Login</a></p>
         </form>
-    </div>
+        </div>
 </body>
 <footer>
 
