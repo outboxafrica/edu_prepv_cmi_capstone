@@ -1,23 +1,202 @@
 /*ading a navbar*/
+
 #navbar {
     overflow: hidden;
     background-color: rgb(209, 135, 24);
-  }
-  #navbar a {
+}
+
+#navbar a {
     float: left;
     font-size: 17px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
-  }
-  #navbar ul{
-    margin:8px 0 0 0;
-    list-style:none;
-  }
- 
-  #navbar a:hover, #dropdown:hover #dropbtn {
+}
+
+#navbar ul {
+    margin: 8px 0 0 0;
+    list-style: none;
+}
+
+#navbar a:hover,
+#dropdown:hover #dropbtn {
     background-color: deeppink;
-  }
-  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/* Applying CSS to all elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/* CSS for body */
+
+body {
+    background-image: url(../images/best-actors.jpg);
+    background-color: darkgreen;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* positioning the checkout block */
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 350px;
+}
+
+
+/* Flex will push the bottom half of form (mycheckout) 
+  to the right, next to product info */
+
+.wrapper .checkout-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+/* wrapper css for the whole checkout tab */
+
+
+/* This is the left hand side of the checkout form */
+
+.wrapper .checkout-wrapper .checkout-product-info {
+    width: 400px;
+    background: antiquewhite;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    position: relative;
+}
+
+
+/* adjustment for the image */
+
+.wrapper .checkout-wrapper .checkout-product-info img {
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+
+/* headertext of the checkout screen  */
+
+.wrapper .checkout-wrapper .checkout-product-info .content {
+    text-align: center;
+    margin-top: 25px;
+    color: blue;
+    text-transform: uppercase;
+}
+
+
+/* header */
+
+.wrapper .checkout-wrapper .checkout-product-info .content h3 {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 3px;
+}
+
+.wrapper .checkout-wrapper .checkout-product-info .content p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.wrapper .checkout-wrapper .checkout-product-info .content .previous {
+    background-color: rgb(253, 253, 253);
+    color: black;
+}
+
+.wrapper .checkout-wrapper .checkout-product-info .content .next {
+    background-color: rgb(253, 253, 253);
+    color: black;
+    margin-left: 45%;
+}
+
+.wrapper .checkout-wrapper .checkout-product-info .content .a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    border-inline: solid;
+    border-color: black;
+}
+
+.wrapper .checkout-wrapper .checkout-product-info .content a:hover {
+    background-color: #101ff8;
+    color: black;
+}
+
+
+/* CHECKOUT PAGE RIGHT HAND SIDE */
+
+
+/* Right hand side of the checkout page */
+
+.wrapper .checkout-wrapper .checkout-form {
+    width: 55%;
+    background: #fff;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    padding: 50px 30px;
+}
+
+.wrapper .checkout-wrapper .checkout-form p {
+    margin-bottom: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.wrapper .checkout-wrapper .checkout-form .section {
+    margin-bottom: 15px;
+}
+
+.wrapper .checkout-wrapper .checkout-form .section input[type="text"] {
+    width: 100%;
+    padding: 5px;
+}
+
+.wrapper .checkout-wrapper .checkout-form .section input[type="text"]:focus {
+    border-color: lightblue;
+}
+
+.wrapper .checkout-wrapper .checkout-form .section.last_section {
+    display: block;
+    justify-content: space-between;
+}
+
+.wrapper .checkout-wrapper .checkout-form .section.last_section {
+    width: 80%;
+}
+
+.wrapper .checkout-wrapper .checkout-form .section.last_section {
+    width: 80%;
+}
+
+
+/* placing a gap under the pay/ rent button */
+
+.wrapper .checkout-wrapper .checkout-form .btn {
+    margin-bottom: 10px;
+}
+
+
+/* placing a gap ontop of the pay/ rent button */
+
+.wrapper .checkout-wrapper .checkout-form .btn2 {
+    margin-top: -12px;
+}
