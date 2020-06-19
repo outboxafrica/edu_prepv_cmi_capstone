@@ -1,4 +1,4 @@
-/*ading a navbar*/
+/*adding a navbar*/
 
 #navbar {
     overflow: hidden;
@@ -56,7 +56,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
+    width: 600px;
     height: 350px;
 }
 
@@ -74,10 +74,11 @@ body {
 /* wrapper css for the whole checkout tab */
 
 
-/* This is the left hand side of the checkout form */
+/* LEFT HAND SIDE OF CHECKOUT FORM */
 
 .wrapper .checkout-wrapper .checkout-product-info {
     width: 400px;
+    height: 110%;
     background: antiquewhite;
     border-top-left-radius: 20%;
     border-bottom-left-radius: 20%;
@@ -142,13 +143,14 @@ body {
 }
 
 
-/* CHECKOUT PAGE RIGHT HAND SIDE */
+/*  RIGHT HAND SIDE of CHECKOUT PAGE */
 
 
 /* Right hand side of the checkout page */
 
 .wrapper .checkout-wrapper .checkout-form {
-    width: 55%;
+    width: 125%;
+    height: auto;
     background: #fff;
     border-top-right-radius: 20%;
     border-bottom-right-radius: 20%;
