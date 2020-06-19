@@ -40,14 +40,26 @@
         <div class="error"></div>
         <!-- sign up form inputs -->
         <form id="form" action="../JS/signupscript.js" method="GET">
-            <input type="email" name="email" id="email" class="input-box" placeholder="Your email" required>
-            <br> <br>
-            <input type="password" name="password" id="password" class="input-box" placeholder="Your password" required>
-            <p><span><input type="checkbox" name="checkbox" id="checkbox" class="check-box" required></span> I agree to the Terms of Service</p>
-        <button id="btn" type="button" class="sign-up-btn" alt="SignUp">Sign Up</button>
+          <!-- email -->
+          <div> 
+            <input id="email" type="text" name="email"  class="input-box" placeholder="Your email" >
+          </div>
+            <br> 
+<!-- password -->
+            <div> 
+            <input id="password" type="text" name="password" class="input-box" placeholder="Your password" required>
+           </div>
+<!-- checkbox -->
+           <div>
+           <p><span><input id="checkbox" type="checkbox" name="checkbox" class="check-box" required></span> I agree to the Terms of Service</p>
+        </div>
+        <!-- submit button -->
+        <div>
+            <button id="btn" type="submit" class="sign-up-btn" alt="SignUp">Sign Up</button>
+        </div>
         <hr>
         <p class="or">OR</p>
-        <!-- <button type="button" class="login-with-btn" alt="Login with Google">Login with Google</button> -->
+        <!-- option to login -->
         <p>Do you have an account?
             <a href="./loginpage.html">Login</a></p>
         </form>
