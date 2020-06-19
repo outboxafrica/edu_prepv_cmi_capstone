@@ -11,7 +11,7 @@ errorElement = ValidateEmail(email);
 
 form.addEventListener('btn', (e) => {
     let messages = [];
-    if (email.value === '' || email.value == null) {
+    if (email.value === ' ' || email.value == null) {
         messages.push('Name is required');
     }
     if (messages.length > 0) {
