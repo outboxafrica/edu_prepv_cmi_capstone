@@ -47,8 +47,11 @@ to the right, next to product info */
 
 /* wrapper css for the whole checkout tab */
 
+
+/* This is the left hand side of the checkout form */
+
 .wrapper .checkout-wrapper .checkout-product-info {
-    width: 65%;
+    width: 400px;
     background: antiquewhite;
     border-top-left-radius: 20%;
     border-bottom-left-radius: 20%;
@@ -59,9 +62,9 @@ to the right, next to product info */
 /* adjustment for the image */
 
 .wrapper .checkout-wrapper .checkout-product-info img {
-    width: 180px;
+    width: 250px;
     margin-top: 30px;
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 
@@ -88,8 +91,35 @@ to the right, next to product info */
     margin-top: 10px;
 }
 
+.wrapper .checkout-wrapper .checkout-product-info .content .previous {
+    background-color: rgb(253, 253, 253);
+    color: black;
+}
 
-/* This css is modifying the right hand side of the checkout page */
+.wrapper .checkout-wrapper .checkout-product-info .content .next {
+    background-color: rgb(253, 253, 253);
+    color: black;
+    margin-left: 45%;
+}
+
+.wrapper .checkout-wrapper .checkout-product-info .content .a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    border-inline: solid;
+    border-color: black;
+}
+
+.wrapper .checkout-wrapper .checkout-product-info .content a:hover {
+    background-color: #101ff8;
+    color: black;
+}
+
+
+/* CHECKOUT PAGE RIGHT HAND SIDE */
+
+
+/* Right hand side of the checkout page */
 
 .wrapper .checkout-wrapper .checkout-form {
     width: 55%;
@@ -119,10 +149,28 @@ to the right, next to product info */
 }
 
 .wrapper .checkout-wrapper .checkout-form .section.last_section {
-    display: flex;
+    display: block;
     justify-content: space-between;
 }
 
 .wrapper .checkout-wrapper .checkout-form .section.last_section {
     width: 80%;
+}
+
+.wrapper .checkout-wrapper .checkout-form .section.last_section {
+    width: 80%;
+}
+
+
+/* placing a gap under the pay/ rent button */
+
+.wrapper .checkout-wrapper .checkout-form .btn {
+    margin-bottom: 10px;
+}
+
+
+/* placing a gap ontop of the pay/ rent button */
+
+.wrapper .checkout-wrapper .checkout-form .btn2 {
+    margin-top: -12px;
 }
