@@ -10,55 +10,39 @@
 <!-- Create a checkout form for users to view & confirm their orders -->
 
 <body>
-    <!--add a navbar here-->
-    <nav id="navbar">
-        <span class="open-slide">
-          <a href="#" onclick="openSlideMenu()">
-            <svg width="30" height="30">
-              <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
-              <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
-              <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
-            </svg>
-          </a>
-    <div id="menu">
-    <ul class="navbar-nav">
-          <div id="content">
-           <li> <a href="../pages/homepage.html">HOME</a></li>
-           <li> <a href="../pages/signuppage.html">SIGN IN</a></li>
-           <li><a href="../pages/loginpage.html">LOG IN</a></li>
-           <li> <a href="../pages/checkoutpage.html">CHECK OUT</a></li>
-          </ul>
-          </div>
-        </div>
-
-    </nav>
-
     <div class="wrapper">
         <div class="checkout-wrapper">
 
             <!-- Product info -->
             <div class="checkout-product-info">
                 <!-- image -->
-                <img src="../VIDEOCATALOGUE/video1.png" alt="picture of your checkout video" class="checkout-product-picture">
+                <img src="../videocatalog/video1.png" alt="picture of your checkout video" class="checkout-product-picture">
                 <!-- content div wrapper, checkout-wrapper,chekout-product-info-->
                 <div class="content">
-                    <h3>Cat Video's <br> EDU prep lesson 10</h3>
+                    <h3>Cat Video's</h3>
+                    <h4>Lesson 10</h4>
+                    <a href="#1" class="previous">&laquo;Previous</a>
+
+                    <a href="#2" class="next">Next&raquo;</a>
                     <!-- Price tag/ rental limit -->
-                    <p>$5/ 3 hours</p>
+                    <div>
+                        <p>USER: "Name"</p>
+                        <p>Timer: # days left</p>
+                    </div>
                 </div>
             </div>
-            <!-- Checkout form -->
+            <!-- Checkout form starts here  -->
             <div class="checkout-form">
-                <p>Payments Section</p>
+                <p>Checkout Section</p>
                 <!-- payment details -->
                 <div class="details">
-                    <!-- Card number input field -->
+                    <!-- ID number input field -->
                     <div class="section">
-                        <input type="text" placeholder="Card Number" class="text">
+                        <input type="text" placeholder="ID Number" class="text">
                     </div>
-                    <!-- Card name input field -->
+                    <!-- ID name input field -->
                     <div class="section">
-                        <input type="text" placeholder="Card Name" class="text">
+                        <input type="text" placeholder="ID Names" class="text">
                     </div>
                     <!-- bottom half of form -->
                     <div class="section last_section">
@@ -68,12 +52,20 @@
                         </div>
                         <!-- CVV input field -->
                         <div class="item">
-                            <input type="text" placeholder="CVV">
+                            <input type="text" placeholder="Group No.">
                         </div>
-                        <!-- Payment button -->
                     </div>
+                    <!-- Payment button -->
                     <div class="btn">
-                        <a href="#">Pay</a>
+                        <a href="#">Pay/Rent Now</a>
+                    </div>
+                    <!-- Or -->
+                    <div class="OR">
+                        <p>OR</p>
+                    </div>
+                    <!-- Return button -->
+                    <div class="btn2">
+                        <a href="" class="" id=""> Return Now</a>
                     </div>
                 </div>
             </div>
