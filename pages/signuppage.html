@@ -36,12 +36,14 @@
     <!-- this div contains the sign up form -->
     <div class="sign-up-form">
         <h1>Sign Up</h1>
+        <!-- error message -->
+        <div class="error"></div>
         <!-- sign up form inputs -->
-        <form>
-            <input type="email" class="input-box" placeholder="Your email" required>
-            <br>
-            <input type="password" class="input-box" placeholder="Your password" required>
-            <p><span><input type="checkbox" class="check-box" required></span> I agree to the Terms of Service</p>
+        <form id="form" action="../JS/signupscript.js" method="GET">
+            <input type="email" name="email" id="email" class="input-box" placeholder="Your email" required>
+            <br> <br>
+            <input type="password" name="password" id="password" class="input-box" placeholder="Your password" required>
+            <p><span><input type="checkbox" name="checkbox" id="checkbox" class="check-box" required></span> I agree to the Terms of Service</p>
         <button id="btn" type="button" class="sign-up-btn" alt="SignUp">Sign Up</button>
         <hr>
         <p class="or">OR</p>
