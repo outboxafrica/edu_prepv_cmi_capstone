@@ -1,0 +1,23 @@
+/*ading a navbar*/
+#navbar {
+    overflow: hidden;
+    background-color: rgb(209, 135, 24);
+  }
+  #navbar a {
+    float: left;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  #navbar ul{
+    margin:8px 0 0 0;
+    list-style:none;
+  }
+ 
+  #navbar a:hover, #dropdown:hover #dropbtn {
+    background-color: deeppink;
+  }
+  

@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="../CSS/loginpage.css" />
   </head>
   <body>
+    <!--add the navbar below-->
+    <nav id="navbar">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+          </svg>
+        </a>
+  <div id="menu">
+  <ul class="navbar-nav">
+        <div id="content">
+         <li> <a href="../pages/homepage.html">HOME</a></li>
+         <li> <a href="../pages/signuppage.html">SIGN IN</a></li>
+         <li><a href="../pages/loginpage.html">LOG IN</a></li>
+         <li> <a href="../pages/checkoutpage.html">CHECK OUT</a></li>
+        </ul>
+        </div>
+      </div>
+
+  </nav>
     <form action="" name="loginform" onsubmit="return formvalidation();">
       <h1 id="heading">LOGIN</h1>
       <div style="text-align: center;">
