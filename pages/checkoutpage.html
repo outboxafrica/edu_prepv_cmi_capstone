@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Page</title>
     <link rel="stylesheet" href="../CSS/checkoutpage.css">
+    <script defer src="../JS/checkoutscript.js">
+    </script>
 </head>
 <!-- Create a checkout form for users to view & confirm their orders -->
 
 <body>
+
     <div class="wrapper">
         <div class="checkout-wrapper">
 
@@ -32,48 +35,52 @@
                 </div>
             </div>
             <!-- Checkout form starts here  -->
-            <div class="checkout-form">
-                <p>Checkout Section</p>
-                <!-- payment details -->
-                <div class="details">
-                    <!-- ID number input field -->
-                    <div class="section">
-                        <input type="text" placeholder="ID Number" class="text">
-                    </div>
-                    <!-- ID name input field -->
-                    <div class="section">
-                        <input type="text" placeholder="ID Names" class="text">
-                    </div>
-                    <!-- bottom half of form -->
-                    <div class="section last_section">
-                        <!-- expiry date input field -->
-                        <div class="item">
-                            <input type="text" placeholder="Expiry Date">
+            <div id="error"></div>
+            <form id="form" action="/" method="GET">
+                <div class="checkout-form">
+                    <p>Checkout Section</p>
+                    <!-- identification details -->
+                    <div class="details">
+                        <!-- ID number input field -->
+                        <div class="section">
+                            <input type="text" placeholder="ID Number" class="text" id="number" required>
                         </div>
-                        <!-- CVV input field -->
-                        <div class="item">
-                            <input type="text" placeholder="Group No.">
+                        <!-- ID name input field -->
+                        <div class="section">
+                            <input type="text" placeholder="ID Names" class="text" id="names" required>
                         </div>
-                    </div>
-                    <!-- Payment button -->
-                    <div class="btn">
-                        <a href="#">Pay/Rent Now</a>
-                    </div>
-                    <!-- Or -->
-                    <div class="OR">
-                        <p>OR</p>
-                    </div>
-                    <!-- Return button -->
-                    <div class="btn2">
-                        <a href="" class="" id=""> Return Now</a>
+                        <!-- bottom half of form -->
+                        <div class="section last_section">
+                            <!-- expiry date input field -->
+                            <div class="item">
+                                <input type="text" placeholder="Expiry Date" id="expiry">
+                            </div>
+                            <!-- Group No. input field -->
+                            <div class="item">
+                                <input type="text" placeholder="Group No." id="group">
+                            </div>
+                        </div>
+                        <!-- Takeout now button -->
+                        <button class="btn" type="submit">Rent Now</button>
+                        <!-- <div  id="btn">
+                            <a href="#">Rent Now</a>
+                        </div> -->
+                        <!-- Or -->
+                        <div class="OR">
+                            <p>OR</p>
+                        </div>
+                        <!-- Return button -->
+                        <button class="btn2" type="submit">RETURN Now</button>
+                        <!--  <div class="btn2" id="btn2">
+                            <a href="" class="" id=""> Return Now</a>
+                        </div> -->
                     </div>
                 </div>
-            </div>
 
         </div>
 
     </div>
-
+    </form>
 </body>
 
 </html>
