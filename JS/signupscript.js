@@ -1,19 +1,28 @@
 // Fundamental JS for validating sign up detials
 //this constant generates new user ID's
-const identityNum = [];
 let checkLogin = '';
 let checkSignUp = '';
+let checkedInfo = true;
 
 //get user data
 function getInfo() {
     var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
-    // var form = document.getElementById('form').value;
-    var checkedInfo = checkInfo(email, password);
 
-    alert("Create an account " + checkedInfo);
-    //create an account
-    createAccount(email, password, checkedInfo);
+    var password = document.getElementById('password').value;
+
+    checkedInfo = checkInfo(email, password);
+
+    if (checkInfo == false) {
+        //create an account
+        createAccount(email, password);
+        alert("Account created");
+
+    } else {
+        window.location.href = "../pages/signuppage.html";
+        alert("Account not created");
+    }
+
+
 }
 
 //check user data with existing userdatabase : testing email & password
@@ -29,44 +38,39 @@ function checkInfo(e, p) {
             console.log("This person is of user id " + accounts[i].id);
             alert("This user email is taken");
             return check;
-        } else {
-            alert("This user is not taken");
+        } else if (e !== accounts[i].email) {
+            alert("This user is not taken (false) " + check);
+            console.log("inputed user details are not in our datatbase")
             return check;
         }
     }
 }
 
 //create a user account 
-function createAccount(e, p, check) {
+function createAccount(e, p) {
+
+    //open home page
+    alert("Welcome to movie magic " + e);
+
+    window.location.href = "../pages/homepage.html";
+
+    //unique identity administrator
+    const identityNum = [];
+
     //check tells us that the account was not found in the database 
-    if (check === false) {
-        window.location.href = "../pages/homepage.html";
+    console.log("User account is being created");
 
-        alert("Welcome to movie majic " + e);
-
-        console.log("User account is being created");
-        //unique identity administrator
-        var idAdmin = accounts[accounts.length - 1].id;
-        //setting the new user's unique ID with identityNum
-        accounts[accounts.length].id = idAdmin++;
-        //new user's email
-        accounts[accounts.length].email = e;
-        //new user's password
-        accounts[accounts.length].password = p;
-
-        console.log("User account has been created - user may proceed to main page");
-        //open home page
-
-
-    } else {
-        alert("Your account was not created ");
-        window.location.href = "../pages/signuppage.html";
-
-        console.log("This user already exists: Account Creation Terminated")
-    }
-
-
+    //setting the new user's unique ID with identityNum
+    accounts.push([accounts.length].id.push(3));
+    //new user's email
+    accounts.push([accounts.length].email.push(e));
+    //new user's password
+    accounts.push([accounts.length].password.push(p));
+    console.log("User account has been created - user may proceed to main page");
 }
+
+
+
 
 // USER ACCOUNTS STORED BELOW--->
 // Declaring user objects: id email password
