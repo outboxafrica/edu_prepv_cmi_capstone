@@ -1,67 +1,47 @@
 // Fundamental JS for validating sign up detials
 
-const email = document.getElementById('email');
-const password = document.getElementById('password');
-const form = document.getElementById('form');
-const errorElement = document.getElementById('error');
+//get user data
+function getInfo(){
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+ var checkedInfo = checkInfo(email);
 
-errorElement = ValidateEmail(email);
+alert("Captured User email " +email+" and User Password "+password+" could be "+checkedInfo);
+}
 
-// To prevent page from submiting if there is incorrect values
-
-form.addEventListener('btn', (e) => {
-    let messages = [];
-    if (email.value === ' ' || email.value == null) {
-        messages.push('Name is required');
+//check user data with existing userdatabase
+function checkInfo(e){
+    let check = false;
+    //loop through the number of accounts 
+    for(var i=0; i<accounts.length; i++){
+        //find a matching email to determine if the user exists
+        if(e == accounts[i].email){
+            check = true;
+            return check;
+        }
     }
+}
 
-    if (password.value.length <= 8) {
-        messages.push('Password must be longer than 8 characters')
-    }
-
-    if (messages.length > 0) {
-        e.preventDefault()
-        errorElement.innerText = messages.join(', ')
-    }
-})
-
-
-// EMAIL VALIDATION
-// function ValidateEmail(inputText) {
-//     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-//     if (inputText.value.match(mailformat)) {
-//         document.form1.text1.focus();
-//         return true;
-//     } else {
-//         alert("You have entered an invalid email address!");
-//         document.form1.text1.focus();
-//         return false;
-//     }
-// }
-
-z
 // USER ACCOUNTS STORED BELOW--->
 // Declaring user objects: email
 
-email = {
-    "emails": []
+var accounts = [
+{   
+    id: 1,
+    email: "tonyrubombora@gmail.com",
+password:"tony123123"
+}, {
+ id: 2,
+ email:"bato@gmail.com",
+ password:"bato123123"
 }
+
+]
 
 // password
 
-password = {
+var password = {
     "passwords": []
 }
 
 // USER ACCOUNTS ABOVE--->
-
-//CAPTURE USER DATA
-
-function captureUserData(e, p, check) {
-    if (check == true) {
-        email.value.push(email);
-        password.value.push(password);
-        return true;
-    }
-    return false;
-}
