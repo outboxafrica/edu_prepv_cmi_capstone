@@ -37,17 +37,17 @@
     <div class="sign-up-form">
         <h1>Sign Up</h1>
         <!-- error message -->
-        <div class="error"></div>
+        <div id="error"></div>
         <!-- sign up form inputs -->
         <form id="form" action="../JS/signupscript.js" method="GET">
           <!-- email -->
           <div> 
-            <input id="email" type="text" name="email"  class="input-box" placeholder="Your email" >
+            <input id="email" type="email" name="email"  class="input-box" placeholder="Your email" required>
           </div>
             <br> 
 <!-- password -->
             <div> 
-            <input id="password" type="text" name="password" class="input-box" placeholder="Your password" required>
+            <input id="password" type="password" name="password" class="input-box" placeholder="Your password" required>
            </div>
 <!-- checkbox -->
            <div>
@@ -55,7 +55,7 @@
         </div>
         <!-- submit button -->
         <div>
-            <button id="btn" type="submit" class="sign-up-btn" alt="SignUp">Sign Up</button>
+            <button id="btn" type="submit" class="sign-up-btn" alt="SignUp" onclick=captureUserData(email,password,checkbox)>Sign Up</button>
         </div>
         <hr>
         <p class="or">OR</p>
