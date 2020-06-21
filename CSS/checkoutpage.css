@@ -1,3 +1,29 @@
+/*adding a navbar*/
+
+#navbar {
+    overflow: hidden;
+    background-color: rgb(209, 135, 24);
+}
+
+#navbar a {
+    float: left;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar ul {
+    margin: 8px 0 0 0;
+    list-style: none;
+}
+
+#navbar a:hover,
+#dropdown:hover #dropbtn {
+    background-color: deeppink;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 /* Applying CSS to all elements */
@@ -30,13 +56,13 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
+    width: 600px;
     height: 350px;
 }
 
 
 /* Flex will push the bottom half of form (mycheckout) 
-to the right, next to product info */
+  to the right, next to product info */
 
 .wrapper .checkout-wrapper {
     width: 100%;
@@ -48,10 +74,11 @@ to the right, next to product info */
 /* wrapper css for the whole checkout tab */
 
 
-/* This is the left hand side of the checkout form */
+/* LEFT HAND SIDE OF CHECKOUT FORM */
 
 .wrapper .checkout-wrapper .checkout-product-info {
     width: 400px;
+    height: 110%;
     background: antiquewhite;
     border-top-left-radius: 20%;
     border-bottom-left-radius: 20%;
@@ -116,13 +143,14 @@ to the right, next to product info */
 }
 
 
-/* CHECKOUT PAGE RIGHT HAND SIDE */
+/*  RIGHT HAND SIDE of CHECKOUT PAGE */
 
 
 /* Right hand side of the checkout page */
 
 .wrapper .checkout-wrapper .checkout-form {
-    width: 55%;
+    width: 125%;
+    height: auto;
     background: #fff;
     border-top-right-radius: 20%;
     border-bottom-right-radius: 20%;
