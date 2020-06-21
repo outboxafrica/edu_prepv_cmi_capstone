@@ -1,51 +1,91 @@
 // Fundamental JS for validating sign up detials
+//this constant generates new user ID's
+let checkLogin = '';
+let checkSignUp = '';
+let checkedInfo = true;
 
-const email = document.getElementById('email');
-const password = document.getElementById('password');
-const form = document.getElementById('form');
-const errorElement = document.getElementById('error');
+//get user data
+function getInfo() {
+    var email = document.getElementById('email').value;
 
-errorElement = ValidateEmail(email);
+    var password = document.getElementById('password').value;
 
-// To prevent page from submiting if there is incorrect values
+    checkedInfo = checkInfo(email, password);
 
-form.addEventListener('btn', (e) => {
-    let messages = [];
-    if (email.value === ' ' || email.value == null) {
-        messages.push('Name is required');
-    }
-    if (messages.length > 0) {
-        e.preventDefault();
-        errorElement.innerText = messages.join(', ');
-    }
-})
+    if (checkInfo == false) {
+        //create an account
+        createAccount(email, password);
+        alert("Account created");
 
-
-// EMAIL VALIDATION
-function ValidateEmail(inputText) {
-    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (inputText.value.match(mailformat)) {
-        document.form1.text1.focus();
-        return true;
     } else {
-        alert("You have entered an invalid email address!");
-        document.form1.text1.focus();
-        return false;
+        window.location.href = "../pages/signuppage.html";
+        alert("Account not created");
+    }
+
+
+}
+
+//check user data with existing userdatabase : testing email & password
+function checkInfo(e, p) {
+    var check = false;
+    //loop through the number of accounts 
+    for (var i = 0; i < accounts.length; i++) {
+        //find a matching email to determine if the user exists
+        if (e == accounts[i].email) {
+            check = true;
+            window.location.href = "../pages/signuppage.html";
+            //verifying to console the user id
+            console.log("This person is of user id " + accounts[i].id);
+            alert("This user email is taken");
+            return check;
+        } else if (e !== accounts[i].email) {
+            alert("This user is not taken (false) " + check);
+            console.log("inputed user details are not in our datatbase")
+            return check;
+        }
     }
 }
+
+//create a user account 
+function createAccount(e, p) {
+
+    //open home page
+    alert("Welcome to movie magic " + e);
+
+    window.location.href = "../pages/homepage.html";
+
+    //unique identity administrator
+    const identityNum = [];
+
+    //check tells us that the account was not found in the database 
+    console.log("User account is being created");
+
+    //setting the new user's unique ID with identityNum
+    accounts.push([accounts.length].id.push(3));
+    //new user's email
+    accounts.push([accounts.length].email.push(e));
+    //new user's password
+    accounts.push([accounts.length].password.push(p));
+    console.log("User account has been created - user may proceed to main page");
+}
+
+
 
 
 // USER ACCOUNTS STORED BELOW--->
-// Declaring user objects: email
+// Declaring user objects: id email password
 
-email = {
-    "emails": []
-}
+var accounts = [{
+            id: 1,
+            email: "tony@gmail.com",
+            password: "tony123123"
 
-// password
+        },
+        {
+            id: 2,
+            email: "bato@gmail.com",
+            password: "bato123123"
+        }
 
-password = {
-    "passwords": []
-}
-
-// USER ACCOUNTS ABOVE--->
+    ]
+    // USER ACCOUNTS ABOVE--->
