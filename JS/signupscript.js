@@ -54,19 +54,6 @@ function createAccount(e, p) {
 
     window.location.href = "../pages/homepage.html";
 
-    //unique identity administrator
-    const identityNum = [];
-
-    //check tells us that the account was not found in the database 
-    console.log("User account is being created");
-
-    //setting the new user's unique ID with identityNum
-    accounts.push([accounts.length].id.push(3));
-    //new user's email
-    accounts.push([accounts.length].email.push(e));
-    //new user's password
-    accounts.push([accounts.length].password.push(p));
-    console.log("User account has been created - user may proceed to main page");
 }
 
 
