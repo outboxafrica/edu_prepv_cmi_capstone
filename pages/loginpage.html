@@ -7,50 +7,68 @@
     <link rel="stylesheet" href="../CSS/loginpage.css" />
   </head>
   <body>
-    <!--add the navbar below-->
-    <nav id="navbar">
-      <span class="open-slide">
-        <a href="#" onclick="openSlideMenu()">
-          <svg width="30" height="30">
-            <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
-            <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
-            <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
-          </svg>
-        </a>
-  <div id="menu">
-  <ul class="navbar-nav">
-        <div id="content">
-         <li> <a href="../pages/homepage.html">HOME</a></li>
-         <li> <a href="../pages/signuppage.html">SIGN IN</a></li>
-         <li><a href="../pages/loginpage.html">LOG IN</a></li>
-         <li> <a href="../pages/checkoutpage.html">CHECK OUT</a></li>
-        </ul>
-        </div>
-      </div>
 
-  </nav>
-    <form action="" name="loginform" onsubmit="return formvalidation();">
+  <nav id="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+        </svg>
+      </a>
+<div id="menu"> 
+<ul class="navbar-nav">
+      <div id="content">
+       <li> <a href="../pages/index.html">HOME</a></li>
+       <li> <a href="../pages/signuppage.html">SIGN UP</a></li>
+       <li><a href="../pages/loginpage.html">LOG IN</a></li>
+       <li> <a href="../pages/checkoutpage.html">CHECK OUT</a></li>
+      </ul>
+      </div>
+    </div>
+
+</nav>
+
+<div id="side-menu" class="side-nav">
+  <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+
+  <hr>
+  <a href="../pages/movies.html">Movies</a>
+  <a href="../pages/series.html">Series</a>
+  <a href="../pages/animations.html">Animations</a>
+  <a href="../pages/anime.html">Anime</a>
+
+ 
+</div>
+    <form action="" name="loginform";>
       <h1 id="heading">LOGIN</h1>
       <div style="text-align: center;">
         <input
           type="text"
-          name="email"
+          name="username"
           placeholder="Email"
           class="address"
         /><br /><br />
 
         <input
           type="password"
-          name="character"
+          name="password"
           placeholder="Password"
           class="character"
         /><br /><br />
 
-        <small class="ref"><a href="signuppage.html">Forgot ?</a> </small
+        <small class="ref"><a href="signuppage.html">Forgot</a> </small
         ><br /><br />
-
-        <button id="btn">Login</button>
+        
+        
+          <button type="submit" id="btn">
+            <a href="index.html" onclick="return formvalidation();" id="submitBtn_link">Login</a>
+          </button>
+        
       </div>
     </form>
+    <script src="../JS/loginscript.js"></script>
+   
   </body>
 </html>

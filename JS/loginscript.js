@@ -4,7 +4,9 @@ function formvalidation () {
     /**Invoking functions with arguments */
     if (emailvalidation(uemail)) {
       if (passid_validation(passid, 6, 12)) {
-        alert("Form Submitted Succesfully");
+        alert('Logged successfully')
+        return true;
+        // alert("Form Submitted Succesfully");
         // window.location.reload(Get);
       }
     }
@@ -37,4 +39,25 @@ function formvalidation () {
 
     return true;
   }
-  
+
+  function openSlideMenu() {
+    document.getElementById('side-menu').style.width = '250px';
+    document.getElementById('main').style.marginLeft = '250px';
+  }
+  function closeSlideMenu() {
+    document.getElementById('side-menu').style.width = '0';
+    document.getElementById('main').style.marginLeft = '0';
+  }
+
+
+//If validation is successful go to next page, ifnot stay on loginpage
+  const submit_buttonLink = document.getElementById('submitBtn_link')
+submit_buttonLink.addEventListener('click', function (){
+  if(formvalidation()){
+    return true
+  }
+  else{
+    event.preventDefault()
+  }
+})
+
