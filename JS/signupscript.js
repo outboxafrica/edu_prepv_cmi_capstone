@@ -2,17 +2,24 @@
 //this constant generates new user ID's
 let checkLogin = '';
 let checkSignUp = '';
-let checkedInfo = true;
+// let checkedInfo = true;
 
-//get user data
+
+//brings user data from form
 function getInfo() {
     var email = document.getElementById('email').value;
+    console.log(email);
 
     var password = document.getElementById('password').value;
+    console.log(password);
 
-    checkedInfo = checkInfo(email, password);
+    alert("Received user data");
 
-    if (checkInfo == false) {
+    var checkedInfo = checkInfo(email, password);
+
+    alert("Confirmed, this user is in our database " + checkedInfo)
+
+    if (checkedInfo == false) {
         //create an account
         createAccount(email, password);
         alert("Account created");
@@ -39,8 +46,8 @@ function checkInfo(e, p) {
             alert("This user email is taken");
             return check;
         } else if (e !== accounts[i].email) {
-            alert("This user is not taken (false) " + check);
-            console.log("inputed user details are not in our datatbase")
+            alert("This user email is not taken ");
+            console.log("This email is not in our datatbase")
             return check;
         }
     }
@@ -49,43 +56,27 @@ function checkInfo(e, p) {
 //create a user account 
 function createAccount(e, p) {
 
+    //add using destructuring 
+    const { email: e, password: p } = account;
+
+    accounts[accounts.length] = account;
+
+
     //open home page
-    alert("Welcome to movie magic " + e);
+    alert("Welcome to movie magic " + account.value.email);
 
     window.location.href = "../pages/homepage.html";
 
-    //unique identity administrator
-    const identityNum = [];
-
-    //check tells us that the account was not found in the database 
-    console.log("User account is being created");
-
-    //setting the new user's unique ID with identityNum
-    accounts.push([accounts.length].id.push(3));
-    //new user's email
-    accounts.push([accounts.length].email.push(e));
-    //new user's password
-    accounts.push([accounts.length].password.push(p));
-    console.log("User account has been created - user may proceed to main page");
 }
-
-
 
 
 // USER ACCOUNTS STORED BELOW--->
 // Declaring user objects: id email password
 
-var accounts = [{
-            id: 1,
-            email: "tony@gmail.com",
-            password: "tony123123"
+const account = { id: 1, email: "dummy@gmail.com", password: "dummy" };
 
-        },
-        {
-            id: 2,
-            email: "bato@gmail.com",
-            password: "bato123123"
-        }
-
-    ]
-    // USER ACCOUNTS ABOVE--->
+var accounts = [{ id: 2, email: "tony@gmail.com", password: "tony123" },
+    { id: 3, email: "alvin@gmail.com", password: "alvin123" },
+    { id: 4, email: "kamoti@gmail.com", password: "kamoti123" }
+];
+// USER ACCOUNTS ABOVE--->
