@@ -1,5 +1,5 @@
 // javascript for the function of the checkout seciton
-const id = document.getElementById('number');
+const idNum = document.getElementById('number');
 const names = document.getElementById('names');
 const form = document.getElementById('form');
 const errorElement = document.getElementById('error');
@@ -17,3 +17,28 @@ form.addEventListener('btn', (e) => {
     }
 
 })
+
+//initiate checkout
+function initiateCheckout() {
+
+}
+
+// display usrname & timer for users
+
+function getUserEmail() {
+
+
+    // get users email from where it is stored in signup JS
+    var email = "tony@gmail.com";
+    console.log(email);
+
+    // initiate a timer & 
+    var date = new date.getDate();
+
+    // link the timer to the user
+    checkoutData[0].timer = date;
+
+
+}
+
+checkoutData = [{ id: 0, timer: , idNum: "", names: "" }]
