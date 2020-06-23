@@ -11,6 +11,7 @@
 body{
     margin: 0 auto; 
     background-color: #dedede;
+    background-image: url(../images/bkgd.jpg);
 }
 #navbar {
     overflow: hidden;
