@@ -1,34 +1,22 @@
-// javascript for the function of the checkout seciton
-const idNum = document.getElementById('number');
-const names = document.getElementById('names');
-const form = document.getElementById('form');
-const errorElement = document.getElementById('error');
-
-// To prevent page from submiting if there is incorrect values
-
-form.addEventListener('btn', (e) => {
-    let messages = [];
-    if (names.value === '' || names.value == null) {
-        messages.push('Name is required');
-    } else {
-        initiateCheckout();
-    }
-
-    if (messages.length > 0) {
-        e.preventDefault();
-        errorElement.innerText = messages.join(', ');
-    }
-
-})
-
 //initiate checkout
-function initiateCheckout(idNum, names) {
+function initiateCheckout() {
+    alert("Initiate Checkout");
+    // javascript for the function of the checkout seciton
+    var idNum = document.getElementById("number").value;
+    console.log("id " + idNum);
+
+    var names = document.getElementById('names').value;
+    console.log("names " + names);
+
+    const errorElement = document.getElementById('error');
+    console.log("error " + idNum);
+
+    alert("collected user data");
     console.log("initiated the checkout");
-    let email = getUserEmail();
+
+    userEmail.innerText = "USER: " + getUserEmail();
     let init = getInitiatedCountdown();
 
-    userEmail.innerText = "USER: " + email;
-    // window.location.href = "";
 
 }
 

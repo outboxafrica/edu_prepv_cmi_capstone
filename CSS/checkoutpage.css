@@ -193,12 +193,20 @@ body {
 /* placing a gap under the pay/ rent button */
 
 .wrapper .checkout-wrapper .checkout-form .btn {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 
 /* placing a gap ontop of the pay/ rent button */
 
 .wrapper .checkout-wrapper .checkout-form .btn2 {
-    margin-top: -12px;
+    margin-top: 0;
+}
+
+
+/* adding CSS to OR button */
+
+.wrapper .checkout-wrapper .checkout-form .OR {
+    margin-top: 10px;
+    margin-bottom: -12px;
 }
