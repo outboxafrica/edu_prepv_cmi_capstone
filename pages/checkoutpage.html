@@ -7,8 +7,7 @@
     <title>Checkout Page</title>
     <link rel="stylesheet" href="../CSS/checkoutpage.css">
 
-    <script defer src="../JS/checkoutscript.js">
-    </script>
+    <script defer src="../JS/checkoutscript.js"></script>
 
 </head>
 <!-- Create a checkout form for users to view & confirm their orders -->
@@ -40,7 +39,8 @@
             <!-- Checkout form starts here  -->
 
             <div id="error"></div>
-            <form id="form" action="/" method="GET">
+
+            <form id="form" action="../JS/checkoutscript.js" method="GET">
                 <div class="checkout-form">
                     <p>Checkout Section</p>
                     <!-- identification details -->
@@ -61,11 +61,11 @@
                             </div>
                             <!-- Group No. input field -->
                             <div class="item">
-                                <input type="text" placeholder="Group No." id="group">
+                                <input type="number" placeholder="Group No." id="group" step="1" max="6">
                             </div>
                         </div>
                         <!-- Takeout now button -->
-                        <button class="btn" type="submit" onclick=return initiateCheckout()>Rent Now</button>
+                        <button class="btn" type="submit" onclick=initiateCheckout()>Rent Now</button>
                         <!-- <div  id="btn">
                             <a href="#">Rent Now</a>
                         </div> -->
