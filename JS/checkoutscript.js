@@ -10,7 +10,10 @@ form.addEventListener('btn', (e) => {
     let messages = [];
     if (names.value === '' || names.value == null) {
         messages.push('Name is required');
+    } else {
+        initiateCheckout();
     }
+
     if (messages.length > 0) {
         e.preventDefault();
         errorElement.innerText = messages.join(', ');
@@ -20,8 +23,12 @@ form.addEventListener('btn', (e) => {
 
 //initiate checkout
 function initiateCheckout(idNum, names) {
+    console.log("initiated the checkout");
     let email = getUserEmail();
     let init = getInitiatedCountdown();
+
+    userEmail.innerText = "USER: " + email;
+    // window.location.href = "";
 
 }
 
@@ -53,7 +60,7 @@ function getInitiatedCountdown() {
 
 //this will store rental information about current usr taking a movie
 
-checkoutData = [{ id: 0, timer: , idNum: "", names: "" }]
+checkoutData = [{ id: 0, timer: 3, idNum: "", names: "" }]
 
 // USER ACCOUNTS STORED BELOW--->
 // Declaring user objects: id email password
