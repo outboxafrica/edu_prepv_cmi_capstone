@@ -154,6 +154,7 @@ body {
     background: #fff;
     border-top-right-radius: 20%;
     border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 10%;
     padding: 50px 30px;
 }
 

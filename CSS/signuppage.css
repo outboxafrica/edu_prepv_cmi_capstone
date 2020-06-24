@@ -64,8 +64,15 @@ body {
 }
 
 .sign-up-form .input-box {
-    width: 60%;
-    /* width: 300px; */
+    width: 150px;
     padding: 10px;
     border-radius: 5px;
+    margin-top: 0px;
+}
+
+.sign-up-form .input-box2 {
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
