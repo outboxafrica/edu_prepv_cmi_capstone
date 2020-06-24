@@ -39,23 +39,33 @@
         <!-- error message -->
         <div id="error"></div>
         <!-- sign up form inputs -->
-        <form id="form" action="/" method="GET">
+        <form id="signupform" name="signupform" action="" method="GET">
           <!-- email -->
           <div> 
-            <input id="email" type="email" name="email"  class="input-box" placeholder="Your email" required>
+            <label for="email">Email: </label>
+            <input id="email" type="email" name="email"  class="input-box" placeholder="Email" required>
           </div>
             <br> 
 <!-- password -->
-            <div> 
-            <input id="password" type="password" name="password" class="input-box" placeholder="Your password" required>
-           </div>
+            <div class=""> 
+            <label for="pwd1">Password: </label>
+            <input id="password" type="password"  class="input-box" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="form.pwd2.pattern = RegExp.escape(this.value);">
+            
+          </div>
+          <!-- confirm password -->
+          
+          <div class=""> 
+            <label for="pwd2">Confirm password: </label>
+            <input id="confirmPassword" type="password" class="input-box2" placeholder="Confirm password" required name="pwd2" >
+            
+          </div>
 <!-- checkbox -->
            <div>
            <p><span><input id="checkbox" type="checkbox" name="checkbox" class="check-box" required></span> I agree to the Terms of Service</p>
         </div>
         <!-- submit button -->
         <div>
-            <button id="btn" type="submit" class="sign-up-btn" alt="SignUp" onclick=getInfo()>Create an Account</button>
+            <button id="btn" type="submit" class="sign-up-btn" alt="SignUp" onclick="return checkForm()">Create an Account</button>
         </div>
         <hr>
         <p class="or">OR</p>
