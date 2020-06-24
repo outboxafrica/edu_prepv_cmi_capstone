@@ -95,3 +95,7 @@ body {
     font-size: 36px;
     margin-left: 50px;
 }
+#log{
+    color: rgb(243, 235, 235);
+    font-size: medium;
+}
