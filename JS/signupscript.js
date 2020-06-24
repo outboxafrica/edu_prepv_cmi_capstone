@@ -14,50 +14,64 @@ function getInfo() {
     password = document.getElementById('password').value;
     console.log(password);
 
-    alert("Checking records...");
-    checkInfo(email);
+    console.log("Accounts length " + accounts.length);
+    alert("Checking records... ");
+    var check = (checkInfo(email));
 
+
+    if (check == true) {
+        alert("This user email is taken");
+
+        window.location.href = "../pages/signuppage.html";
+
+    } else {
+        alert("This user email is not taken ");
+
+        createAccount(email, password);
+    }
 
 }
 
 //check user data with existing userdatabase : testing email & password
 function checkInfo(em) {
-
+    var info = false;
     //loop through the number of accounts 
-    for (var i = 0; i < accounts.length; i++) {
+    for (var i = 0; i < 3; i++) {
+        console.log(accounts[i][1]);
         //find a matching email to determine if the user exists
-        if (em == accounts[i].email) {
+        if (em == accounts[i][1]) {
 
-            window.location.href = "../pages/loginpage.html";
             //verifying to console the user id
-            console.log("This person is of user id " + accounts[i].id);
-            alert("This user email is taken");
-            return true;
+            console.log("A person was found, of user email: " + accounts[i][1]);
+            info = true;
 
         } else {
-            console.log("This email is not in our datatbase")
-            alert("This user email is not taken ");
-            createAccount(email, password);
-
-            return false;
+            console.log("This email is not in our database " + em)
         }
     }
+    return info;
 }
+
 
 //create a user account 
 function createAccount(mail, pass) {
 
-    //creating accounts
-    accounts[5].id = 5;
-    accounts[5].email = mail;
-    accounts[5].password = pass;
 
-    console.log(accounts[5]);
+    //creating accounts
+    accounts[accounts.length] = [];
+    accounts[accounts.length][0] = 5;
+    accounts[accounts.length][1] = mail;
+    accounts[accounts.length][2] = pass;
+
+    for (var j; j < accounts[accounts.length]; j++) {
+        console.log(accounts[accounts.length][j]);
+    }
 
     //open home page
+    window.location.href = "../pages/homepage.html";
+
     alert("Welcome to movie magic " + mail);
 
-    // window.location.href = "../pages/homepage.html";
 
 }
 
@@ -66,11 +80,9 @@ function createAccount(mail, pass) {
 // Declaring user objects: id email password
 
 var accounts = [
-    { id: 2, email: "tony@gmail.com", password: "tony123" },
-    { id: 3, email: "alvin@gmail.com", password: "alvin123" },
-    { id: 4, email: "kamoti@gmail.com", password: "kamoti123" },
-    { id: 5, email: "", password: "" },
-    { id: 6, email: "", password: "" },
-    { id: 7, email: "", password: "" }
+    [2, "tony@gmail.com", "tony123", "CM10100007", 12, "ANTONY"],
+    [3, "alvin@gmail.com"],
+    [0, "", "", "", 0, ""],
+    [2, "tonyrubombora@gmail.com", "tony123", "CM10100007", 12, "ANTONY"],
 ];
 // USER ACCOUNTS ABOVE--->

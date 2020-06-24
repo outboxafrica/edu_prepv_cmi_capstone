@@ -5,6 +5,7 @@ body {
     background-image: url(../images/bkgd.jpg);
 }
 
+
 /*navbar css*/
 
 #navbar {
@@ -50,6 +51,12 @@ body {
 
 .sign-up-btn {
     margin: 5% auto 5%;
+    background-color: rgb(52, 52, 241);
+    padding: 8px;
+    width: 325px;
+    font-weight: bold;
+    color: wheat;
+    border-radius: 5px;
 }
 
 .or {
@@ -58,4 +65,7 @@ body {
 
 .sign-up-form .input-box {
     width: 60%;
+    /* width: 300px; */
+    padding: 10px;
+    border-radius: 5px;
 }
