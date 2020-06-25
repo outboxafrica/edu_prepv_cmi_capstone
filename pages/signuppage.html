@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Page</title>
     <link rel="stylesheet" href="../CSS/signuppage.css">
-    <script defer src="../JS/signupscript.js"></script>
+    <!-- <script defer src="../JS/signupscript.js"></script> -->
 </head>
 <!-- created a html sign up page and linked it to signuppage.css  -->
 
@@ -43,20 +43,20 @@
           <!-- email -->
           <div> 
             <label for="email">Email: </label>
-            <input id="email" type="email" name="email"  class="input-box" placeholder="Email" required>
+            <input id="email" type="email" name="email"  class="input-box" placeholder="Email">
           </div>
             <br> 
 <!-- password -->
             <div class=""> 
             <label for="pwd1">Password: </label>
-            <input id="password" type="password"  class="input-box" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="form.pwd2.pattern = RegExp.escape(this.value);">
+            <input id="password" type="password"  class="input-box" placeholder="Password" name="password">
             
           </div>
           <!-- confirm password -->
           
           <div class=""> 
             <label for="pwd2">Confirm password: </label>
-            <input id="confirmPassword" type="password" class="input-box2" placeholder="Confirm password" required name="pwd2" >
+            <input id="confirmPassword" type="password" class="input-box2" placeholder="Confirm password"  name="confirmpassword" >
             
           </div>
 <!-- checkbox -->
@@ -65,7 +65,10 @@
         </div>
         <!-- submit button -->
         <div>
-            <button id="btn" type="submit" class="sign-up-btn" alt="SignUp" onclick="return checkForm()">Create an Account</button>
+          <button type="submit" id="btn">
+            <a href="movies.html" onclick="return formvalidation();" id="submitBtn_link">Create Account</a>
+<!-- 
+            <button id="btn" type="submit" class="sign-up-btn" alt="SignUp" onclick="return checkForm()">Create an Account</button> -->
         </div>
         <hr>
         <p class="or">OR</p>
@@ -78,5 +81,6 @@
 <footer>
 
 </footer>
+<script src="../JS/signupscript.js"></script>
 
 </html>
