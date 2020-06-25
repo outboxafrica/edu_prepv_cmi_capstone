@@ -64,11 +64,11 @@ img {
 .banner-logo {
 	position: relative;
 	z-index: 2;
-	height: 90px;
+	height: 145px;
 }
 
 .banner-logo img {
-	width: 170px;
+	width: 300px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -93,7 +93,7 @@ img {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	margin-top: 9rem;
+	margin-top: 1rem;
 }
 
 .banner-content h1 {
