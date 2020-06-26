@@ -122,8 +122,8 @@ body:before{
 }
 
 .wrapper .checkout-wrapper .checkout-product-info .content p {
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 12px;
+    margin-top: -10px;
 }
 
 .wrapper .checkout-wrapper .checkout-product-info .content .previous {
@@ -162,7 +162,6 @@ body:before{
     background: #fff;
     border-top-right-radius: 20%;
     border-bottom-right-radius: 20%;
-    border-bottom-left-radius: 10%;
     padding: 50px 30px;
 }
 
