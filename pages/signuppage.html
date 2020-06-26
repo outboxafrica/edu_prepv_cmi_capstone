@@ -5,61 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Page</title>
-    <link rel="stylesheet" href="../CSS/signuppage.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!-- <script defer src="../JS/signupscript.js"></script> -->
 </head>
 <!-- created a html sign up page and linked it to signuppage.css  -->
 
 <body>
-    <!--below is the navbar-->
-    <nav id="navbar">
-        <span class="open-slide">
-          <a href="#" onclick="openSlideMenu()">
-            <svg width="30" height="30">
-              <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
-              <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
-              <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
-            </svg>
-          </a>
-    <div id="menu">
-    <ul class="navbar-nav">
-          <div id="content">
-            <li> <a href="./index.html">HOME</a></li>
-            <li> <a href="./signuppage.html">SIGN UP</a></li>
-            <li><a href="./loginpage.html">LOG IN</a></li>
-            <li> <a href="./checkoutpage.html">CHECK OUT</a></li>
-            <li> <a href="./feedbackpage.html">FEEDBACK</a></li>
-          </ul>
-          </div>
-        </div>
-
-    </nav>
-    <!-- this div contains the sign up form -->
-    <div class="sign-up-form">
+  <header class="login-banner">
+    <div class="banner-logo">
+        <img src="images/magi_logo.png" alt="" />
+        <a href="login.html" class="btn btn-rounded">Already have an Account?</a>
+    </div>
+    <div class="banner-content">
+      <div class="contact-form">
         <h1>Sign Up</h1>
         <!-- error message -->
         <div id="error"></div>
         <!-- sign up form inputs -->
         <form id="signupform" name="signupform" action="" method="GET">
           <!-- email -->
-          <div> 
-            <label for="email">Email: </label>
             <input id="email" type="email" name="email"  class="input-box" placeholder="Email">
-          </div>
             <br> 
 <!-- password -->
-            <div class=""> 
-            <label for="pwd1">Password: </label>
+
             <input id="password" type="password"  class="input-box" placeholder="Password" name="password">
-            
-          </div>
           <!-- confirm password -->
-          
-          <div class=""> 
-            <label for="pwd2">Confirm password: </label>
             <input id="confirmPassword" type="password" class="input-box2" placeholder="Confirm password"  name="confirmpassword" >
-            
-          </div>
+
 <!-- checkbox -->
            <div>
            <p><span><input id="checkbox" type="checkbox" name="checkbox" class="check-box" required></span> I agree to the Terms of Service</p>
@@ -75,9 +47,12 @@
         <p class="or">OR</p>
         <!-- option to login -->
         <p>Do you have an account?
-            <a href="./loginpage.html">Login</a></p>
+            <a href="./login.html">Login</a></p>
         </form>
         </div>
+    </div>
+  </header>
+
 </body>
 <footer>
 

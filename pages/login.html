@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+<header class="login-banner">
+  <div class="banner-logo">
+      <img src="images/magi_logo.png" alt="" />
+      <a href="./signuppage.html" class="btn btn-rounded">Create Account</a>
+  </div>
+  <div class="banner-content">
+    <div class="contact-form">
+    <form action="" name="loginform";>
+      <h1 id="heading">LOGIN</h1>
+      <div style="text-align: center;">
+        <input
+          type="text"
+          name="username"
+          placeholder="Student ID"
+          class="address"
+        /><br /><br />
+
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          class="character"
+        /><br /><br />
+
+        <small class="ref"><a href="signuppage.html">Forgot Password</a> </small
+        ><br /><br />
+     
+        <button type="submit" id="btn" >
+          <a href="movies.html" onclick="return formvalidation();" id="submitBtn_link"><span id="log">Login</span></a>
+        </button>
+        </div>
+        </form>
+      </div>
+  </div>
+</header>
+        <script src="../JS/loginscript.js"></script>
+
+</body>
+
+</html>

@@ -8,7 +8,7 @@ body{
 }
 #navbar {
     overflow: hidden;
-    background-color: rgb(209, 181, 24);
+    background-color: #DE080D;
     margin-left: 0px;
     width: auto;
     
@@ -23,7 +23,7 @@ body{
     
   }
   #navbar a:hover, #dropdown:hover #dropbtn {
-    background-color: deeppink;
+    background-color: #A60303;
   }
   
   #navbar ul{
@@ -48,7 +48,7 @@ body{
     text-align: left;
   }
   #dropdown-content a:hover {
-    background-color: deeppink;
+    background-color: #A60303;
     color: #f4f4f4ec;
   }
   #dropdown:hover #dropdown-content {
@@ -76,7 +76,7 @@ body{
     transition:0.3s;
   }
   .side-nav a:hover{
-    color: deeppink;
+    color: #A60303;
   }
   .side-nav .btn-close{
     position:absolute;
@@ -101,10 +101,10 @@ body{
   h1 {
     text-align: left;
     font-weight: bolder;
-    color: deeppink;
+    color: #A60303;
   }
   h2 { 
-    color: deeppink;
+    color: #A60303;
   }
   i {
     float: right;
@@ -163,7 +163,7 @@ body{
     height: 250px;
   }
   .member{
-    background-color: rgb(141, 20, 255);
+    background-color: #DE080D;
     max-width: 50%;
     padding: 0px;
     margin: 0px;
@@ -240,7 +240,7 @@ body{
   }
   .version-control button {
     border: 1px solid white;
-    background-color: deeppink;
+    background-color: #A60303;
     padding: 12px;
     color: white;
     border-radius: 5px;
@@ -275,23 +275,23 @@ body{
   }
   #cartt{
     text-align: center;
-    color: blueviolet;
+    color: #DE080D;
   }
   #avenger{
-    color: rgb(125, 10, 231);
+    color: #DE080D;
   }
   #shot{
-    color: rgb(125, 10, 231);
+    color:#DE080D;
   }
   #extract{
-    color: rgb(125, 10, 231);
+    color:#DE080D;
   }
   #fastt{
-    color: rgb(125, 10, 231);
+    color:#DE080D;
   }
   #term{
-    color: rgb(125, 10, 231);
+    color: #DE080D;
   }
 #list{
-  color: rgb(125, 10, 231);
+  color:#DE080D;
 }
