@@ -1,27 +1,3 @@
-// // Fundamental JS for validating sign up detials
-
-// function checkForm() {
-//     var email =
-//         console.log(email);
-//     alert("");
-//     return true;
-// }
-
-// // form.addEventListener() {
-
-// // }
-
-// // USER ACCOUNTS STORED BELOW--->
-// // Declaring user objects: id email password
-
-// var accounts = new Array();
-
-// accounts = [
-//     ["tonyrubombora@gmail.com"],
-//     ["batoalvin@gmail.com"]
-// ];
-// // USER ACCOUNTS ABOVE--->
-
 function formvalidation() {
     var uemail = document.signupform.email;
     var passid = document.signupform.password;
@@ -30,12 +6,12 @@ function formvalidation() {
     if (emailvalidation(uemail)) {
         if (passid_validation(passid, 2, 12)) {
             if (firstvalidation(ufirst, 2, 12)) {
-            alert('SignedUp  successfully')
-            return true;
-            // alert("Form Submitted Succesfully");
-            // window.location.reload(Get);
+                alert('Signed up  successfully')
+                return true;
+                // alert("Form Submitted Succesfully");
+                // window.location.reload(Get);
+            }
         }
-    }
     }
     return false;
 };
@@ -72,9 +48,8 @@ function passid_validation(passid, mx, my) {
 function firstvalidation(ufirst, mx, my) {
     //Accessing form element
     var ufirst_len = ufirst.value.length;
-    if (ufirst_len == 0 || ufirst_len >= my || ufirst_len < mx) {
-        alert("Password characters should be between " + mx + " to " + my);
-
+    if (ufirst !== passid) {
+        alert("Password should match!")
         ufirst.focus();
         return false;
     }
