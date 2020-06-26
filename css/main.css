@@ -96,13 +96,14 @@ img {
     position: relative;
     z-index: 2;
     width: 65%;
+    height: 25%;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 9rem;
+    margin-top: 5rem;
 }
 
 .banner-content h1 {
@@ -116,8 +117,8 @@ img {
     text-transform: uppercase;
     color: #fff;
     font-weight: 400;
-    font-size: 1.9rem;
-    line-height: 1.25;
+    font-size: 1.25rem;
+    line-height: 0.75;
     margin: 0 0 2rem;
 }
 
@@ -125,6 +126,7 @@ img {
     max-width: 70%;
     margin: 1rem auto;
     overflow: auto;
+    bottom: 30px;
 }
 
 .footer,
@@ -309,13 +311,11 @@ img {
     }
 }
 
-@media(max-height: 600px) {
-    .banner-content {
-        margin-top: 3rem;
+@media screen and (max-width:800px) {
+    .left, .main, .right {
+      width:100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
 }
-
-
 /*login form*/
 
 .contact-form {
