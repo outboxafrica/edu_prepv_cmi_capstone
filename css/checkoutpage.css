@@ -114,8 +114,8 @@ body {
 }
 
 .wrapper .checkout-wrapper .checkout-product-info .content p {
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 12px;
+    margin-top: -10px;
 }
 
 .wrapper .checkout-wrapper .checkout-product-info .content .previous {
