@@ -7,7 +7,7 @@ function formvalidation() {
     if (emailvalidation(uemail)) {
         if (passid_validation(passid, 2, 12)) {
             if (firstvalidation(ufirst, 2, 12)) {
-                alert('Welcome to Magi-Cinema ' + document.getElementById('email').value)
+                alert('Welcome to Magi-Cinema ' + uemail.value)
 
                 return true;
                 // alert("Form Submitted Succesfully");
@@ -40,24 +40,27 @@ function passid_validation(passid, mx, my) {
 
         passid.focus();
         return false;
-    }
-
-    return true;
-}
-
-
-//Defining method passid_valiadtion with parameters
-function firstvalidation(ufirst, mx, my) {
-    //Accessing form element
-    var ufirst_len = ufirst.value.length;
-    if (ufirst !== passid) {
-        alert("Password should match!")
-        ufirst.focus();
+    } else if (passid.value !== ufirst.value) {
+        alert("Password should match!");
         return false;
     }
 
     return true;
 }
+
+
+// //Defining method passid_valiadtion with parameters
+// function firstvalidation(ufirst, mx, my) {
+//     //Accessing form element
+//     var ufirst_len = ufirst.value.length;
+//     if (ufirst !== ufirst) {
+//         alert(
+//         ufirst.focus();
+//         return false;
+//     }
+
+//     return true;
+// }
 
 function openSlideMenu() {
     document.getElementById('side-menu').style.width = '250px';
