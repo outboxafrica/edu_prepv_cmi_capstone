@@ -6,7 +6,7 @@
     <title>Checkout Page</title>
     <link rel="stylesheet" href="../CSS/checkoutpage.css">
 
-   
+
 
 </head>
 <!-- Create a checkout form for users to view & confirm their orders -->
@@ -19,18 +19,14 @@
             <!-- Product info -->
             <div class="checkout-product-info">
                 <!-- image -->
-              
+
                 <img name='slide' style="width: 300px; height: 300px; margin-left: 40px; border-radius: 7px;">
                 <!-- content div wrapper, checkout-wrapper,chekout-product-info-->
                 <div class="content">
-                  
+
                     <div>
 
-                        <p id="userEmail">USER: batoalvin@gmail.com</p>
-                        <p id="timer">Timer:
-                            <iframe src="http://free.timeanddate.com/countdown/i7ceegny/n115/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw320/szh135/tac000/tptTime%20since%20Event%20started%20in/tpc000/mac000/mpc000/iso2020-06-26T00:00:00" allowTransparency="true"
-                                frameborder="0" width="118" height="50"></iframe>
-                        </p>
+                        <p id="timer">Timer: </p>
                     </div>
                 </div>
             </div>
@@ -38,57 +34,50 @@
 
             <div id="error"></div>
 
-            <form id="form" action="../pages/loginpage.html" method="GET">
-                <div class="checkout-form">
-                    <p>Checkout Section</p>
-                    <!-- identification details -->
-                    <div class="details">
-                        <!-- ID number input field -->
-                        <div class="section">
-                            <input type="text" placeholder="ID Number" class="text" id="number" required>
+            <!-- <form id="form" action="" method="GET"> -->
+            <div class="checkout-form">
+                <p>Checkout Section</p>
+                <!-- identification details -->
+                <div class="details">
+                    <!-- ID number input field -->
+                    <div class="section">
+                        <input type="text" placeholder="ID Number" class="text" id="number" required>
+                    </div>
+                    <!-- ID name input field -->
+                    <div class="section">
+                        <input type="text" placeholder="ID Names" class="text" id="names" required>
+                    </div>
+                    <!-- bottom half of form -->
+                    <div class="section last_section">
+                        <!-- expiry date input field -->
+                        <div class="item">
+                            <input type="text" placeholder="Expiry Date" id="expiry">
                         </div>
-                        <!-- ID name input field -->
-                        <div class="section">
-                            <input type="text" placeholder="ID Names" class="text" id="names" required>
+                        <!-- Group No. input field -->
+                        <div class="item">
+                            <input type="number" placeholder="Group No." id="group" step="1" min="1" max="6">
                         </div>
-                        <!-- bottom half of form -->
-                        <div class="section last_section">
-                            <!-- expiry date input field -->
-                            <div class="item">
-                                <input type="text" placeholder="Expiry Date" id="expiry">
-                            </div>
-                            <!-- Group No. input field -->
-                            <div class="item">
-                                <input type="number" placeholder="Group No." id="group" step="1" min="1" max="6">
-                            </div>
-                        </div>
-                        <!-- Rent now date -->
-                        <div>
-                            <input id="rentnDate" type="date" required>
-                        </div>
-                        <!-- Takeout now button -->
-                        <button class="btn" onclick="initiateCheckout();" type="submit">Rent Now</button>
-
-                        <!-- <div  id="btn">
-                            <a href="#">Rent Now</a>
-                        </div> -->
-                        <!-- Or -->
-                        <div class="OR">
-                            <p>OR</p>
-                        </div>
-                        <div>
-                            <input id="returnDate" type="date">
-                        </div>
+                    </div>
+                    <div>
+                        <!-- Rent now button -->
+                        <button id="btn" class="btn" type="submit">Rent Now</button>
+                    </div>
+                    <!-- Or -->
+                    <div class="OR">
+                        <p>OR</p>
+                    </div>
+                    <div>
                         <!-- Return button -->
-                        <button class="btn2" type="submit">RETURN Now</button>
-                        
+                        <button id="btn" class="btn2" type="submit">RETURN Now</button>
                     </div>
                 </div>
+
+            </div>
 
         </div>
 
     </div>
-    </form>
+    <!-- </form> -->
 
     <script src="../JS/checkoutscript.js"></script>
 
