@@ -10,6 +10,9 @@ var time = 2000;
 //turns timer off
 var timeOff = false;
 
+//
+var returnN = false;
+
 //Image list
 images[0] = '../images/24.jpg';
 images[1] = '../images/avengers.jpg';
@@ -47,36 +50,52 @@ function changeImage() {
 window.onload = changeImage;
 
 
+const btn2 = document.getElementById('btn2');
+btn2.addEventListener("click", returnNow);
 
+function returnNow() {
 
+    returnN = true;
 
+}
 
-// Set the date we're counting down to
-var countDownDate = new Date("Jun 28, 2020 15:37:25").getTime();
+const btn = document.getElementById('btn')
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+btn.addEventListener("click", startTimer)
 
-    // Get today's date and time
-    var now = new Date().getTime();
+function startTimer() {
+    // Set the date we're counting down to
+    var countDownDate = new Date().getTime();
+    countDownDate += (1000 * 60 * 60 * 24) * 3;
 
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
+    // Update the count down every 1 second
+    var x = setInterval(function() {
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Get today's date and time
+        var now = new Date().getTime();
 
-    // Display the result in the element with id="demo"
-    document.getElementById("timer").innerHTML = "You have " + days + "DAYS " + hours + "h " +
-        minutes + "m " + seconds + "s <br> to return your movies!";
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
 
-    // If the count down is finished, write some text
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("timer").innerHTML = "EXPIRED";
-    }
-}, 1000);
-// window.onload = setInterval;
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("timer").innerHTML = "You have " + days + "DAYS " + hours + "h " +
+            minutes + "m " + seconds + "s <br> to return your movies!";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "EXPIRED";
+        }
+
+        if (returnN === true) {
+            document.getElementById("timer").innerHTML = "MOVIES HANDED IN, THANK YOU!";
+
+        }
+    }, 1000);
+}
