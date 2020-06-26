@@ -44,19 +44,6 @@ img {
 }
 
 .banner {
-<<<<<<< HEAD
-	width: 100%;
-	height: 100vh;
-	position: relative;
-	background: url('../images/banner.jpg') no-repeat center center/cover;
-}
-
-.login-banner {
-	width: 100%;
-	height: 100vh;
-	position: relative;
-	background: url('../images/banner2.jpg') no-repeat center center/cover;
-=======
     width: 100%;
     height: 100vh;
     position: relative;
@@ -68,7 +55,6 @@ img {
     height: 100vh;
     position: relative;
     background: url('../images/banner2.jpg') no-repeat center center/cover;
->>>>>>> e6bc8e6d60d45e63be5c8ce22543c98a2c4f73a8
 }
 
 .banner::after,
@@ -376,8 +362,7 @@ img {
 
 .contact-form input[type="email"],
 .contact-form input[type="text"],
-.contact-form input[type="password"]
- {
+.contact-form input[type="password"] {
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
