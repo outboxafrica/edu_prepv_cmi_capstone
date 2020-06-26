@@ -48,20 +48,6 @@ window.onload = changeImage;
 
 
 
-const st = document.getElementById("btn")
-
-
-function start() {
-    if (st) {
-        st.onclick = start;
-
-        st.addEventListener('click', function start() {
-            document.getElementById("timer").innerHTML = "START";
-
-        });
-    }
-
-}
 
 
 
