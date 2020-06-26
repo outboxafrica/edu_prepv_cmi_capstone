@@ -40,14 +40,21 @@
 
 /* CSS for body */
 
-body {
-    background-image: url(../images/best-actors.jpg);
-    background-color: darkgreen;
+body:before{
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/best-actors.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);}
 
 /* positioning the checkout block */
 
@@ -57,7 +64,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
-    height: 350px;
+    height: 500px;
 }
 
 
@@ -66,7 +73,7 @@ body {
 
 .wrapper .checkout-wrapper {
     width: 100%;
-    height: 100%;
+    height: 500px;
     display: flex;
 }
 
@@ -78,8 +85,8 @@ body {
 
 .wrapper .checkout-wrapper .checkout-product-info {
     width: 400px;
-    height: 110%;
-    background: antiquewhite;
+    height: 500px;
+    background-color: rgba(247, 243, 243, 0.788);
     border-top-left-radius: 20%;
     border-bottom-left-radius: 20%;
     position: relative;
@@ -92,6 +99,7 @@ body {
     width: 250px;
     margin-top: 30px;
     margin-left: 15px;
+    height: 500px;
 }
 
 
@@ -100,7 +108,7 @@ body {
 .wrapper .checkout-wrapper .checkout-product-info .content {
     text-align: center;
     margin-top: 25px;
-    color: blue;
+    color: #DE080D;
     text-transform: uppercase;
 }
 
@@ -150,7 +158,7 @@ body {
 
 .wrapper .checkout-wrapper .checkout-form {
     width: 125%;
-    height: auto;
+    height: 100%;
     background: #fff;
     border-top-right-radius: 20%;
     border-bottom-right-radius: 20%;
