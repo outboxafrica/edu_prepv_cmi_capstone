@@ -2,6 +2,8 @@ function formvalidation() {
     var uemail = document.signupform.email;
     var passid = document.signupform.password;
     var ufirst = document.signupform.confirmpassword;
+    alert('Welcome to Magi-Cinema ' + document.getElementById('email').value)
+
     /**Invoking functions with arguments */
     if (emailvalidation(uemail)) {
         if (passid_validation(passid, 2, 12)) {
