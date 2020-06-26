@@ -4,9 +4,9 @@ function formvalidation() {
     /**Invoking functions with arguments */
     if (emailvalidation(uemail)) {
         if (passid_validation(passid, 2, 12)) {
-            alert('Logged  successfully')
+            alert('Welcome to Magi-Cinema ' + uemail.value + '!');
             return true;
-        
+
         }
     }
     return false;

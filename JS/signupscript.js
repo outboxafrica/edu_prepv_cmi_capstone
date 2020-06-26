@@ -2,13 +2,13 @@ function formvalidation() {
     var uemail = document.signupform.email;
     var passid = document.signupform.password;
     var ufirst = document.signupform.confirmpassword;
-    alert('Welcome to Magi-Cinema ' + document.getElementById('email').value)
 
     /**Invoking functions with arguments */
     if (emailvalidation(uemail)) {
         if (passid_validation(passid, 2, 12)) {
             if (firstvalidation(ufirst, 2, 12)) {
-                alert('Signed up  successfully')
+                alert('Welcome to Magi-Cinema ' + document.getElementById('email').value)
+
                 return true;
                 // alert("Form Submitted Succesfully");
                 // window.location.reload(Get);
