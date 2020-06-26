@@ -3,44 +3,27 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="../CSS/loginpage.css" />
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
 
-    <nav id="navbar">
-        <span class="open-slide">
-      <a href="#" onclick="openSlideMenu()">
-        <svg width="30" height="30">
-          <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
-          <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
-          <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
-        </svg>
-      </a>
-<div id="menu"> 
-<ul class="navbar-nav">
-      <div id="content">
-        <li> <a href="./index.html">HOME</a></li>
-        <li> <a href="./signuppage.html">SIGN UP</a></li>
-        <li><a href="./loginpage.html">LOG IN</a></li>
-        <li> <a href="./checkoutpage.html">CHECK OUT</a></li>
-        <li> <a href="./feedbackpage.html">FEEDBACK</a></li>
-      </ul>
-      </div>
-    </div>
-
-</nav>
- 
-</div>
+<header class="login-banner">
+  <div class="banner-logo">
+      <img src="images/magi_logo.png" alt="" />
+      <a href="pages/signuppage.html" class="btn btn-rounded">Create Account</a>
+  </div>
+  <div class="banner-content">
+    <div class="contact-form">
     <form action="" name="loginform";>
       <h1 id="heading">LOGIN</h1>
       <div style="text-align: center;">
         <input
           type="text"
           name="username"
-          placeholder="Email"
+          placeholder="Student ID"
           class="address"
         /><br /><br />
 
@@ -51,16 +34,19 @@
           class="character"
         /><br /><br />
 
-        <small class="ref"><a href="signuppage.html">Forgot</a> </small
+        <small class="ref"><a href="signuppage.html">Forgot Password</a> </small
         ><br /><br />
      
-        <button type="submit" id="btn">
+        <button type="submit" id="btn" >
           <a href="movies.html" onclick="return formvalidation();" id="submitBtn_link"><span id="log">Login</span></a>
-
+        </button>
 
 
         </div>
         </form>
+      </div>
+  </div>
+</header>
         <script src="../JS/loginscript.js"></script>
 
 </body>
