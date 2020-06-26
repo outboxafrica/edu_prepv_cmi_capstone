@@ -23,6 +23,10 @@
 #dropdown:hover #dropbtn {
     background-color: deeppink;
 }
+.content p {
+    font-weight: 700;
+	font-size: 4.2rem;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
