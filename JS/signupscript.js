@@ -5,14 +5,13 @@ function formvalidation() {
 
     /**Invoking functions with arguments */
     if (emailvalidation(uemail)) {
-        if (passid_validation(passid, 2, 12)) {
-            if (firstvalidation(ufirst, 2, 12)) {
-                alert('Welcome to Magi-Cinema ' + uemail.value)
+        if (passid_validation(passid, 8, ufirst)) {
 
-                return true;
-                // alert("Form Submitted Succesfully");
-                // window.location.reload(Get);
-            }
+            // alert('Welcome to Magi-Cinema ' + uemail.value)
+
+            return true;
+            // alert("Form Submitted Succesfully");
+            // window.location.reload(Get);
         }
     }
     return false;
@@ -32,15 +31,14 @@ function emailvalidation(uemail) {
 
 
 //Defining method passid_valiadtion with parameters
-function passid_validation(passid, mx, my) {
+function passid_validation(passid, mx, ufirst) {
     //Accessing form element
     var passid_len = passid.value.length;
-    if (passid_len == 0 || passid_len >= my || passid_len < mx) {
-        alert("Password characters should be between " + mx + " to " + my);
-
+    if (passid_len == 0 || passid_len <= mx || passid.value == null) {
+        alert("Password characters should be at least 8 characters!");
         passid.focus();
         return false;
-    } else if (passid.value !== ufirst.value) {
+    } else if (passid.value != ufirst.value) {
         alert("Password should match!");
         return false;
     }
