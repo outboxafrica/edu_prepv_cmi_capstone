@@ -49,13 +49,3 @@ function closeSlideMenu() {
     document.getElementById('main').style.marginLeft = '0';
 }
 
-
-//If validation is successful go to next page, ifnot stay on loginpage
-const submit_buttonLink = document.getElementById('submitBtn_link')
-submit_buttonLink.addEventListener('click', function() {
-    if (formvalidation()) {
-        return true
-    } else {
-        event.preventDefault()
-    }
-})
