@@ -2,6 +2,8 @@ function formvalidation() {
     var uemail = document.signupform.email;
     var passid = document.signupform.password;
     var ufirst = document.signupform.confirmpassword;
+    var check = document.signupform.check;
+    alert("check is " + check.value);
 
     /**Invoking functions with arguments */
     if (emailvalidation(uemail)) {
@@ -37,28 +39,13 @@ function passid_validation(passid, mx, ufirst) {
     if (passid_len == 0 || passid_len <= mx || passid.value == null) {
         alert("Password characters should be at least 8 characters!");
         passid.focus();
-        return false;
-    } else if (passid.value != ufirst.value) {
-        alert("Password should match!");
-        return false;
+        if (passid.value != ufirst.value) {
+            alert("Your passwords should match!");
+            return false;
+        }
     }
-
     return true;
 }
-
-
-// //Defining method passid_valiadtion with parameters
-// function firstvalidation(ufirst, mx, my) {
-//     //Accessing form element
-//     var ufirst_len = ufirst.value.length;
-//     if (ufirst !== ufirst) {
-//         alert(
-//         ufirst.focus();
-//         return false;
-//     }
-
-//     return true;
-// }
 
 function openSlideMenu() {
     document.getElementById('side-menu').style.width = '250px';
