@@ -1,117 +1,132 @@
-body{
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:"Arial", Serif;
-    background-color:#f4f4f4ec;
-    
+    font-family: "Arial", Serif;
+    background-color: #f4f4f4ec;
 }
+
 #navbar {
     overflow: hidden;
     background-color: #DE080D;
     margin-left: 0px;
     width: auto;
-    
-  }
-  #navbar a {
+}
+
+#navbar a {
     float: left;
     font-size: 17px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
-  }
-  #navbar a:hover, #dropdown:hover #dropbtn {
+}
+
+#navbar a:hover,
+#dropdown:hover #dropbtn {
     background-color: #A60303;
-  }
-  
-  #navbar ul{
-    margin:8px 0 0 0;
-    list-style:none;
-  }
- 
-  #dropdown-content {
+}
+
+#navbar ul {
+    margin: 8px 0 0 0;
+    list-style: none;
+}
+
+#dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  #dropdown-content a {
+}
+
+#dropdown-content a {
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
-  #dropdown-content a:hover {
+}
+
+#dropdown-content a:hover {
     background-color: #A60303;
     color: #f4f4f4ec;
-  }
-  #dropdown:hover #dropdown-content {
+}
+
+#dropdown:hover #dropdown-content {
     display: block;
-  }
-  .side-nav{
-    height:100%;
-    width:0;
-    position:fixed;
-    z-index:1;
-    top:0;
-    left:0;
-    background-color:#111;
-    opacity:0.9;
-    overflow-x:hidden;
-    padding-top:60px;
-    transition:0.5s;
-  }
-  .side-nav a{
-    padding:10px 10px 10px 30px;
-    text-decoration:none;
-    font-size:22px;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
     color: #fff;
-    display:block;
-    transition:0.3s;
-  }
-  .side-nav a:hover{
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
     color: #A60303;
-  }
-  .side-nav .btn-close{
-    position:absolute;
-    top:0;
-    right:22px;
-    font-size:36px;
-    margin-left:50px;
-  }
-  #main{
-    transition:margin-left 0.5s;
-    padding:20px;
-    overflow:hidden;
-    width:100%;
-  }
-  @media only screen and (max-width:620px) {
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+@media only screen and (max-width:620px) {
     /* For mobile phones: */
-    .menu, .main, .right {
-      width:100%;
+    .menu,
+    .main,
+    .right {
+        width: 100%;
     }
-  }
-  
-  h1 {
+}
+
+h1 {
     text-align: left;
     font-weight: bolder;
     color: #A60303;
-  }
-  h2 { 
+}
+
+h2 {
     color: #A60303;
-  }
-  i {
+}
+
+i {
     float: right;
     text-transform: uppercase;
     font-weight: bolder;
-  }
-  #welcome-section{
+}
+
+#welcome-section {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -120,82 +135,93 @@ body{
     margin-top: 0px;
     display: block;
     height: 20vh;
-   
-  }
- .pop{
-     margin-left: 20px;
- }
-  .welcome-btn{
-    width:550px;
+}
+
+.pop {
+    margin-left: 20px;
+}
+
+.welcome-btn {
+    width: 550px;
     text-align: center;
     padding: 30px;
     position: relative;
     left: 90px;
     top: 90px;
-  }
-  @media(max-width:760px){
-    #welcome-text{
-      width:91%;
-      color: floralwhite;
-      position: static;
-      background-image: url(../images/img11-media.jpg);
-      background-size: cover;
-      opacity: 1;
+}
+
+@media(max-width:760px) {
+    #welcome-text {
+        width: 91%;
+        color: floralwhite;
+        position: static;
+        background-image: url(../images/img11-media.jpg);
+        background-size: cover;
+        opacity: 1;
     }
-    .welcome-btn{
-      display: none;
+    .welcome-btn {
+        display: none;
     }
-    #welcome-section{
-      background-image:none;
-      width: 100%;
-      height: 20%;
+    #welcome-section {
+        background-image: none;
+        width: 100%;
+        height: 20%;
     }
-  }
-  .members{
+}
+
+.members {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
-  .members img{
+}
+
+.members img {
     size: 10%;
     width: 250px;
     height: 250px;
-  }
-  .member{
+}
+
+.member {
     background-color: #DE080D;
     max-width: 50%;
     padding: 0px;
     margin: 0px;
     border: 1px solid rgba(51, 51, 51, 0.247);
-  }
-  .member a{
+}
+
+.member a {
     text-decoration: none;
-  }
-  .caption{
+}
+
+.caption {
     box-sizing: border-box;
     text-align: center;
     margin-bottom: auto;
     height: 30px;
     color: #f1ececf3;
-  }
-  .about-image{
+}
+
+.about-image {
     width: 50%;
     float: right;
     margin-left: 20px;
-  }
-  .about-image img{
+}
+
+.about-image img {
     width: 100%;
     height: 250px;
-  }
-  .about-text{
+}
+
+.about-text {
     text-transform: initial;
     text-align: justify;
     height: 250px;
     margin-top: 50px;
     margin-bottom: 50px;
-  }
-  @media(max-width:760px){
+}
+
+@media(max-width:760px) {
     /* .about-image{
       width:80%;
       clear: both;
@@ -204,94 +230,124 @@ body{
     .about-image img{
       display: none;
     } */
-    .about-text{
-      padding-top: 10px;
-      clear: both;
-      margin: 0px auto;
-      width: 80%;
-      height: auto;
+    .about-text {
+        padding-top: 10px;
+        clear: both;
+        margin: 0px auto;
+        width: 80%;
+        height: auto;
     }
-    h2, h1, h3{
-      text-align: center;
+    h2,
+    h1,
+    h3 {
+        text-align: center;
     }
-  }
-  .contact-git{
+}
+
+.contact-git {
     width: 100%;
     float: left;
     margin-right: 20px;
     height: 0px;
     opacity: 0.9;
-  }
-  
-  .contact-form{
+}
+
+.contact-form {
     text-transform: initial;
     text-align: justify;
     height: 300px;
     text-align: center;
     padding: 70px;
-  }
-  .version-control h3 {
+}
+
+.version-control h3 {
     padding-bottom: 20px;
-  }
-  .version-control input {
+}
+
+.version-control input {
     padding: 12px;
     border-radius: 5px;
     border: none;
-  }
-  .version-control button {
+}
+
+.version-control button {
     border: 1px solid white;
     background-color: #A60303;
     padding: 12px;
     color: white;
     border-radius: 5px;
     text-transform: uppercase;
-  }
-  
-  footer {
-    clear: both;	
-    width:100%;
+}
+
+footer {
+    clear: both;
+    width: 100%;
     margin-bottom: 30px;
     margin-top: -50px;
-  }
-  footer .menu a, .copyright {
-    color:grey;
-    font-size:10px;
-  }
-  .copyright {
-    width:95%;
+}
+
+footer .menu a,
+.copyright {
+    color: grey;
+    font-size: 10px;
+}
+
+.copyright {
+    width: 95%;
     padding: 10px;
     border: 1px solid #eee;
     text-align: center;
-  }
-  .input{
-    width: 20rem; 
-    padding: 10px; 
+}
+
+.input {
+    width: 20rem;
+    padding: 10px;
     border-radius: 10px;
-  }
-  .moon{
+}
+
+.moon {
     padding: 5px;
     background-color: dimgray;
     border-radius: 5px;
-  }
-  #cartt{
+}
+
+#cartt {
     text-align: center;
     color: #DE080D;
-  }
-  #avenger{
+}
+
+#avenger {
     color: #DE080D;
-  }
-  #shot{
-    color:#DE080D;
-  }
-  #extract{
-    color:#DE080D;
-  }
-  #fastt{
-    color:#DE080D;
-  }
-  #term{
+}
+
+#shot {
     color: #DE080D;
-  }
-#list{
-  color:#DE080D;
+}
+
+#extract {
+    color: #DE080D;
+}
+
+#fastt {
+    color: #DE080D;
+}
+
+#term {
+    color: #DE080D;
+}
+
+#list {
+    color: #DE080D;
+}
+
+.pop .about-us .about-text p {
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.pop .about-us {
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
 }
