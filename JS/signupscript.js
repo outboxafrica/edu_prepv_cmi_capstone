@@ -5,15 +5,11 @@ function formvalidation() {
     var uemail = document.getElementById("email");
     var passid = document.getElementById("password");
     var ufirst = document.getElementById("confirmPassword");
-    var check = ch.value;
-
-    //return values from checkvalidation
-    alert("check is " + check);
 
     /**Invoking functions with arguments */
-    if (checkValidation(check)) {
-        if (emailvalidation(uemail)) {
-            if (passid_validation(passid, 7, ufirst)) {
+    if (emailvalidation(uemail)) {
+        if (passid_validation(passid, 7, ufirst)) {
+            if (checkValidation(ch.value)) {
                 alert('Welcome to Magi-Cinema ' + uemail.value);
                 window.location.href = "movies.html";
                 return true;
@@ -35,7 +31,7 @@ function emailvalidation(uemail) {
         return false;
     } else {
 
-        alert("You must enter a valid email address!");
+        alert("Please enter a valid email address!");
         uemail.focus();
         return false;
     }
@@ -46,17 +42,18 @@ function emailvalidation(uemail) {
 function passid_validation(passid, mx, ufirst) {
     //Accessing form element
     var passid_len = passid.value.length;
-    if (passid_len == 0 || passid.value == null) {
+    if (passid_len == 0 || passid.value == null || passid.value == '') {
         alert("Please input a password");
         passid.focus();
 
         return false;
     } else if (passid_len < mx) {
-        alert("Password characters should be at least 8 characters!");
+        alert("Password characters should be at least 8 characters");
         passid.focus();
+
         return false;
     } else if (passid.value != ufirst.value) {
-        alert("Both passwords should match!");
+        alert("Both passwords should match");
         passid.focus();
         return false;
     }
@@ -104,5 +101,3 @@ submit_buttonLink.addEventListener('click', function() {
         event.preventDefault()
     }
 })
-
-//adding button listener for checkbox

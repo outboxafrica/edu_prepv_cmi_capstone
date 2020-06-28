@@ -382,7 +382,7 @@ img {
     padding: 5px;
 }
 
-.contact-form button[type="submit"] {
+.contact-form button[type="buttons"] {
     height: 10px;
     /* width: 0px; */
     color: #fff;
@@ -391,7 +391,6 @@ img {
     cursor: pointer;
     border: none;
     outline: none;
-    margin-top: 15%;
 }
 
 .contact-form a {
@@ -402,21 +401,32 @@ img {
     width: auto;
 }
 
+.contact-form .or {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contact-form h3 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 input[type="checkbox"] {
     width: 20%;
     margin-bottom: -30px;
 }
-.create{
+
+.create {
     background-color: #A60303;
     padding: 5px;
-   
 }
-.createlogin{
+
+.createlogin {
     background-color: #A60303;
     padding: 5px;
     font-size: large;
-   
 }
-.loginlink{
+
+.loginlink {
     color: #1155cc;
 }
