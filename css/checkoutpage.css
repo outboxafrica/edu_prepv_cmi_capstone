@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 /* Applying CSS to all elements */
@@ -17,7 +15,7 @@
 
 /* CSS for body */
 
-body:before{
+body:before {
     content: '';
     position: fixed;
     width: 100vw;
@@ -31,7 +29,9 @@ body:before{
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
-    filter: blur(5px);}
+    filter: blur(5px);
+}
+
 
 /* positioning the checkout block */
 
@@ -86,7 +86,7 @@ body:before{
 .wrapper .checkout-wrapper .checkout-product-info .content {
     text-align: center;
     margin-top: 25px;
-    color: #DE080D;
+    color: #3268bd;
     text-transform: uppercase;
     margin-left: 30px;
 }
@@ -94,10 +94,18 @@ body:before{
 
 /* header */
 
-.wrapper .checkout-wrapper .checkout-product-info .content h3 {
-    font-size: 18px;
-    line-height: 18px;
-    letter-spacing: 3px;
+.wrapper .checkout-wrapper .checkout-product-info .content .m {
+    text-align: center;
+    color: #3268bd;
+    font-size: small;
+}
+
+.wrapper .checkout-wrapper .checkout-product-info .content h4 {
+    color: #DE080D;
+}
+
+.wrapper .checkout-wrapper .checkout-form .details h5 {
+    margin-top: 50%;
 }
 
 .wrapper .checkout-wrapper .checkout-product-info .content p {
@@ -144,6 +152,9 @@ body:before{
     padding: 50px 30px;
 }
 
+
+/* .wrapper .checkout-wrapper .checkout-form .details */
+
 .wrapper .checkout-wrapper .checkout-form p {
     margin-bottom: 25px;
     font-size: 18px;
@@ -160,7 +171,7 @@ body:before{
 }
 
 .wrapper .checkout-wrapper .checkout-form .section input[type="text"]:focus {
-    border-color: lightblue;
+    border-color: rgb(0, 42, 255);
 }
 
 .wrapper .checkout-wrapper .checkout-form .section.last_section {
@@ -168,12 +179,12 @@ body:before{
     justify-content: space-between;
 }
 
-.wrapper .checkout-wrapper .checkout-form .section.last_section {
-    width: 80%;
+.wrapper .checkout-wrapper .checkout-form .section.last_section .expiry {
+    width: 90px;
 }
 
-.wrapper .checkout-wrapper .checkout-form .section.last_section {
-    width: 80%;
+.wrapper .checkout-wrapper .checkout-form .section.last_section .group {
+    width: 80px;
 }
 
 
