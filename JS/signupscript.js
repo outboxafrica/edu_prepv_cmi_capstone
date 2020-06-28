@@ -10,8 +10,8 @@ function formvalidation() {
     if (emailvalidation(uemail)) {
         if (passid_validation(passid, 7, ufirst)) {
             if (checkValidation(ch.value)) {
-                alert('Welcome to Magi-Cinema ' + uemail.value);
-                window.location.href = "movies.html";
+                alert('Welcome to Magi-Cinema ' + uemail.value + '!');
+                window.location.href = "../pages/movies.html";
                 return true;
             }
         }
@@ -48,7 +48,7 @@ function passid_validation(passid, mx, ufirst) {
 
         return false;
     } else if (passid_len < mx) {
-        alert("Password characters should be at least 8 characters");
+        alert("Password should be at least 8 characters long");
         passid.focus();
 
         return false;
