@@ -16,6 +16,8 @@ function validate() {
     } else if (gr == null || gr == 0 || gr == '') {
         alert("Please put in your Outbox EDU Group number");
         return false;
+    } else {
+        return true;
     }
 
 }
@@ -36,43 +38,56 @@ var timeOff = false;
 var returnN = false;
 //
 var run1 = false;
+//if forward or back button pressed
+var buton = false;
 
 //Image list
-images[0] = '../images/24.jpg';
-images[1] = '../images/avengers.jpg';
-images[2] = '../images/blacklist.jpg';
-images[3] = '../images/extraction.jpg';
-images[4] = '../images/condor.jpg';
-images[5] = '../images/bloodshot.jpg';
-images[6] = '../images/fastandfurious.jpg';
-images[7] = '../images/terminator.jpg';
-images[8] = '../images/flash.jpg';
-images[9] = '../images/frozen.jpg';
-images[10] = '../images/spies.jpg';
-images[11] = '../images/zootopia.jpg';
-images[12] = '../images/coco.jpg';
-images[13] = '../images/garo.jpg';
-images[14] = '../images/naruto.jpg';
-images[15] = '../images/jl.jpg';
-images[16] = '../images/kirito.jpg';
+images[0] = '../images/avengers.jpg';
+images[1] = '../images/frozen.jpg';
+images[2] = '../images/spies.jpg';
+images[3] = '../images/naruto.jpg';
+images[4] = '../images/extraction.jpg';
 
-
-//To change the image
+// //To change the image
 function changeImage() {
-
     document.slide.src = images[movies];
-
-    if (movies < images.length - 1) {
-        //If its true increament by one
-        movies++;
-    } else {
-        //If its false reset it to 0
-        movies = 0;
-    }
-    setTimeout('changeImage()', time);
 }
 window.onload = changeImage;
 
+//to change image forward
+function next() {
+    // buton = true;
+
+
+    if (movies < images.length - 1) {
+
+        //If its true increament by one
+        movies++;
+        document.slide.src = images[movies];
+    } else {
+        //If its false reset it to 0
+        movies = 0;
+        document.slide.src = images[movies];
+
+    }
+}
+
+//to change image forward
+function prev() {
+    // buton = true;
+
+    if (movies > 0) {
+        //If its true increament by one
+        movies--;
+        document.slide.src = images[movies];
+
+    } else {
+        //If its false reset it to 0
+        movies = images.length - 1;
+        document.slide.src = images[movies];
+
+    }
+}
 
 const btn2 = document.getElementById('btn2');
 btn2.addEventListener("click", returnNow);
